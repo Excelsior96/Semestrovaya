@@ -1,6 +1,5 @@
 package Repository;
 
-import Entities.Find;
 import Entities.Vacancy;
 import Exceptions.VacancyException;
 import Utilities.DBService;
@@ -68,6 +67,15 @@ public class VacancyRepo {
         return list;
 
     }
+
+    public static String getAd(int id){
+
+        String insert = "SELECT name, ";
+        Connection con = DBService.connect();
+
+      return null;
+    }
+
 
     public static String[][] getTable(ArrayList<Vacancy> list) {
         String[][] data = new String[list.size()][4];
@@ -191,6 +199,61 @@ public class VacancyRepo {
                         set.getString(2),
                         set.getInt(3),
                         set.getString(4)));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+    public static ArrayList<Vacancy> getAllAd(int id) {
+        ArrayList<Vacancy> list = new ArrayList<Vacancy>();
+        Connection con = DBService.connect();
+        String insert = "SELECT p.name, v.payment, v.cond, v.req, h.home, c.name, c.phone, c.adres \n" +
+                "FROM Vacancy AS v, Pos AS p, Company AS c, HomeV AS h\n" +
+                "WHERE v.c_id = ? AND v.p_id = p.id AND c.id = v.c_id AND v.archive=0 AND v.home = h.id  ";
+        try {
+            CallableStatement st = con.prepareCall(insert);
+            st.setInt(1, id);
+            ResultSet set = st.executeQuery();
+            while (set.next()) {
+                list.add(new Vacancy(
+                        set.getString(1),
+                        set.getInt(2),
+                        set.getString(3),
+                        set.getString(4),
+                        set.getString(5),
+                        set.getString(6),
+                        set.getString(7),
+                        set.getString(8)));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+
+    public static ArrayList<Vacancy> getAdById(int id, int cid) {
+        ArrayList<Vacancy> list = new ArrayList<Vacancy>();
+        Connection con = DBService.connect();
+        String insert = "SELECT p.name, v.payment, v.cond, v.req, h.home, c.name, c.phone, c.adres \n" +
+                "FROM Vacancy AS v, Pos AS p, Company AS c, HomeV AS h\n" +
+                "WHERE v.c_id = ? AND v.p_id = p.id AND c.id = v.c_id AND v.archive = 0 AND v.home = h.id AND v.id = ?  ";
+        try {
+            CallableStatement st = con.prepareCall(insert);
+            st.setInt(1, cid);
+            st.setInt(2, id);
+            ResultSet set = st.executeQuery();
+            while (set.next()) {
+                list.add(new Vacancy(
+                        set.getString(1),
+                        set.getInt(2),
+                        set.getString(3),
+                        set.getString(4),
+                        set.getString(5),
+                        set.getString(6),
+                        set.getString(7),
+                        set.getString(8)));
             }
         } catch (SQLException e) {
             e.printStackTrace();

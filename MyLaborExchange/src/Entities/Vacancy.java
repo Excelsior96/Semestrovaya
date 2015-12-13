@@ -15,6 +15,8 @@ public class Vacancy {
     private String company;
     private String pos;
     private String name;
+    private String phone;
+    private String adres;
 
     public Vacancy(int id, String pos, int c_id, String company, int payment, String cond, String req, String home ) {
         this.id = id;
@@ -43,6 +45,18 @@ public class Vacancy {
         this.id = id;
         this.pos = pos;
         this.company = company;
+    }
+
+    public Vacancy(String name, int pay, String cond, String req, String home, String company, String phone, String adres) {
+        this.name = name;
+        this.payment = pay;
+        this.cond = cond;
+        this.req = req;
+        this.company = company;
+        this.home = home;
+
+        this.phone = phone;
+        this.adres = adres;
     }
 
     public int getId() {
@@ -131,5 +145,21 @@ public class Vacancy {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAdres() {
+        return adres;
+    }
+
+    public void setAdres(String adres) {
+        this.adres = adres;
     }
 }

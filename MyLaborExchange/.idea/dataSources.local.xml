@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="SQL Server - @localhost" uuid="ac1af8f1-c8ca-479a-998e-d4f050ec266f">
-      <secret-storage>master_key</secret-storage>
-      <domain-auth>true</domain-auth>
-      <first-sync>true</first-sync>
-    </data-source>
+    <data-source name="SQL Server - @localhost" uuid="ac1af8f1-c8ca-479a-998e-d4f050ec266f" />
   </component>
 </project>

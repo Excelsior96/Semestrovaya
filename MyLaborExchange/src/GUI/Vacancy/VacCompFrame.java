@@ -88,13 +88,12 @@ public class VacCompFrame {
                     AllCompFrame.getFrame().dispose();
                     new AllCompFrame();
                     new VacCompFrame(comp);
-                    CompProfFrame.getFrame().dispose();;
+                    CompProfFrame.getFrame().dispose();
                     new CompProfFrame(comp);
                 } catch (VacancyException ex) {
                     JOptionPane.showMessageDialog(panel, ex.getMessage());
                     ex.printStackTrace();
                 }
-
 
 
             }
@@ -112,16 +111,50 @@ public class VacCompFrame {
 
 
         };
-        button.addActionListener(listener);
-        but.addActionListener(lis);
-        b.addActionListener(l);
-        panel.add(button, GUIService.setTextFieldConstraints());
-        panel.add(but, GUIService.setTextFieldConstraints());
-        panel.add(b, GUIService.setTextFieldConstraints());
 
-        frame.add(panel, BorderLayout.CENTER);
-        frame.setVisible(true);
-    }
+        JButton bu = new JButton("Создать объявление");
+        ActionListener li = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String id = field.getText();
+                try { //Validation
+                    VacancyRepo.intValidator(id);
+                   ArrayList list = VacancyRepo.getAdById(Integer.parseInt(id), comp.getId());
+                     new AdFrame(list);
+
+                } catch (VacancyException e1) {
+                    JOptionPane.showMessageDialog(panel, e1.getMessage());
+                    e1.printStackTrace();
+                }
+
+
+            }};
+
+
+
+            JButton butt = new JButton("Сгенерировать все объявления");
+            ActionListener liste = new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                        ArrayList<Vacancy> list = VacancyRepo.getAllAd(comp.getId());
+                        new AdFrame(list);
+                }
+            };
+
+            butt.addActionListener(liste);
+            button.addActionListener(listener);
+            but.addActionListener(lis);
+            b.addActionListener(l);
+            bu.addActionListener(li);
+            panel.add(button,GUIService.setTextFieldConstraints());
+            panel.add(but,GUIService.setTextFieldConstraints());
+            panel.add(b,GUIService.setTextFieldConstraints());
+            panel.add(bu,GUIService.setTextFieldConstraints());
+            panel.add(butt,GUIService.setTextFieldConstraints());
+
+            frame.add(panel,BorderLayout.CENTER);
+            frame.setVisible(true);
+        }
 
 
     public static JFrame getFrame() {

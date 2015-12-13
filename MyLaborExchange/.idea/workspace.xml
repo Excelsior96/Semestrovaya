@@ -35,14 +35,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FindVacFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/Find/FindVacFrame.java">
+      <file leaf-file-name="VacancyRepo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Repository/VacancyRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4897436">
+              <caret line="237" column="45" selection-start-line="237" selection-start-column="45" selection-end-line="237" selection-end-column="45" />
+              <folding>
+                <marker date="1450031722945" expanded="true" signature="375:425" placeholder="DELETE FROM ..." />
+                <marker date="1450031722945" expanded="true" signature="767:815" placeholder="DELETE FROM ..." />
+                <marker date="1450031722945" expanded="true" signature="1296:1605" placeholder="SELECT v.id,..Vacancy..." />
+                <marker date="1450031722945" expanded="true" signature="1572:1604" placeholder="SELECT p_id ..Find..." />
+                <marker date="1450031722945" expanded="true" signature="3965:4026" placeholder="UPDATE Find ..." />
+                <marker date="1450031722945" expanded="true" signature="4049:4100" placeholder="DELETE FROM ..." />
+                <marker date="1450031722945" expanded="true" signature="4123:4191" placeholder="UPDATE Unemp..." />
+                <marker date="1450031722945" expanded="true" signature="4215:4281" placeholder="UPDATE Vacan..." />
+                <marker date="1450031722945" expanded="true" signature="6238:6405" placeholder="SELECT v.id,..Vacancy..." />
+                <marker date="1450031722945" expanded="true" signature="7101:7360" placeholder="SELECT p.nam..Vacancy..." />
+                <marker date="1450031722945" expanded="true" signature="8240:8501" placeholder="SELECT p.nam..Vacancy..." />
+                <marker date="1450031722945" expanded="true" signature="8240:8505" placeholder="SELECT p.nam..Vacancy..." />
+                <marker date="1450031722945" expanded="true" signature="8240:8514" placeholder="SELECT p.nam..Vacancy..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vacancy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entities/Vacancy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3002#3003#0" expanded="true" />
+                <element signature="e#3030#3031#0" expanded="true" />
+                <element signature="e#3072#3073#0" expanded="true" />
+                <element signature="e#3106#3107#0" expanded="true" />
+                <element signature="e#3138#3139#0" expanded="true" />
+                <element signature="e#3166#3167#0" expanded="true" />
+                <element signature="e#3208#3209#0" expanded="true" />
+                <element signature="e#3242#3243#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Utilities/DBService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
+              <caret line="121" column="94" selection-start-line="121" selection-start-column="94" selection-end-line="121" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,15 +100,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompProfFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/Company/CompProfFrame.java">
+      <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entities/Company.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+              <folding>
+                <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/AdFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4574#4575#0" expanded="true" />
-                <element signature="e#4628#4629#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,91 +129,9 @@
         <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacFindFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FindUnempFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/Find/FindUnempFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllCompFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/Company/AllCompFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VacancyRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/VacancyRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="78" column="42" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
-              <folding>
-                <element signature="e#6020#6029#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FindRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/FindRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="113" column="38" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
-              <folding>
-                <element signature="e#3158#3164#0" expanded="true" />
-                <marker date="1449971985170" expanded="true" signature="946:1118" placeholder="SELECT f.id,..Find..." />
-                <marker date="1449971985170" expanded="true" signature="2719:2768" placeholder="DELETE FROM ..." />
-                <marker date="1449971985170" expanded="true" signature="3239:3445" placeholder="SELECT f.id,..Find..." />
-                <marker date="1449971985170" expanded="true" signature="3409:3444" placeholder="SELECT p_id ..Vacancy..." />
-                <marker date="1449971985170" expanded="true" signature="4063:4114" placeholder="DELETE FROM ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VacDelDial.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacDelDial.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyRepo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Repository/CompanyRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5185995">
-              <caret line="52" column="94" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
-              <folding>
-                <marker date="1449969195411" expanded="true" signature="375:407" placeholder="DELETE FROM ..." />
-                <marker date="1449969195411" expanded="true" signature="764:802" placeholder="INSERT INTO ..." />
-                <marker date="1449969195411" expanded="true" signature="1271:1340" placeholder="SELECT name,..Company..." />
-                <marker date="1449969195411" expanded="true" signature="2147:2183" placeholder="SELECT * FRO..Company..." />
-                <marker date="1449969195411" expanded="true" signature="4247:4293" placeholder="SELECT id,na..Company..." />
-                <marker date="1449969195411" expanded="true" signature="5360:5396" placeholder="SELECT * FRO..Company..." />
               </folding>
             </state>
           </provider>
@@ -184,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/GUI/Unemployed/ProfDelDialog.java" />
         <option value="$PROJECT_DIR$/src/GUI/Find/FindDelDial.java" />
         <option value="$PROJECT_DIR$/src/GUI/Unemployed/AllUnempFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI/Unemployed/DistUnempFrame.java" />
@@ -199,15 +168,17 @@
         <option value="$PROJECT_DIR$/src/GUI/Find/VacFindFrame.java" />
         <option value="$PROJECT_DIR$/src/Repository/FindRepo.java" />
         <option value="$PROJECT_DIR$/src/GUI/Find/FindVacFrame.java" />
-        <option value="$PROJECT_DIR$/src/Repository/VacancyRepo.java" />
-        <option value="$PROJECT_DIR$/src/Entities/Vacancy.java" />
         <option value="$PROJECT_DIR$/src/GUI/Vacancy/VacFindFrame.java" />
         <option value="D:/Documents/Semestrovaya/MyLaborExchange/src/Entities/Find.java" />
         <option value="$PROJECT_DIR$/src/GUI/Find/FindUnempFrame.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI/Vacancy/VacDelDial.java" />
         <option value="$PROJECT_DIR$/src/GUI/Company/CompProfFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI/Company/AllCompFrame.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Unemployed/ProfDelDialog.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Vacancy.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Vacancy/AdFrame.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java" />
+        <option value="$PROJECT_DIR$/src/Repository/VacancyRepo.java" />
       </list>
     </option>
   </component>
@@ -248,7 +219,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -461,7 +432,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -473,6 +444,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -730,6 +702,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -757,41 +735,42 @@
       <created>1449950985602</created>
       <option name="number" value="Default" />
       <updated>1449950985602</updated>
-      <workItem from="1449950989718" duration="22080000" />
+      <workItem from="1449950989718" duration="30796000" />
+      <workItem from="1450028356624" duration="3334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22080000" />
+    <option name="totallyTimeSpent" value="34130000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12418301" sideWeight="0.11043873" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12418301" sideWeight="0.11043873" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20751634" sideWeight="0.8895613" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31699347" sideWeight="0.8895613" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24659607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.046898637" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -820,11 +799,29 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java</url>
+          <line>139</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -832,19 +829,81 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ac1af8f1-c8ca-479a-998e-d4f050ec266f/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/Repository/VacancyRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="212" column="37" selection-start-line="212" selection-start-column="37" selection-end-line="212" selection-end-column="37" />
+          <folding>
+            <marker date="1450031722945" expanded="true" signature="375:425" placeholder="DELETE FROM ..." />
+            <marker date="1450031722945" expanded="true" signature="767:815" placeholder="DELETE FROM ..." />
+            <marker date="1450031722945" expanded="true" signature="1296:1605" placeholder="SELECT v.id,..Vacancy..." />
+            <marker date="1450031722945" expanded="true" signature="1572:1604" placeholder="SELECT p_id ..Find..." />
+            <marker date="1450031722945" expanded="true" signature="3965:4026" placeholder="UPDATE Find ..." />
+            <marker date="1450031722945" expanded="true" signature="4049:4100" placeholder="DELETE FROM ..." />
+            <marker date="1450031722945" expanded="true" signature="4123:4191" placeholder="UPDATE Unemp..." />
+            <marker date="1450031722945" expanded="true" signature="4215:4281" placeholder="UPDATE Vacan..." />
+            <marker date="1450031722945" expanded="true" signature="6238:6405" placeholder="SELECT v.id,..Vacancy..." />
+            <marker date="1450031722945" expanded="true" signature="7101:7360" placeholder="SELECT p.nam..Vacancy..." />
+            <marker date="1450031722945" expanded="true" signature="8240:8501" placeholder="SELECT p.nam..Vacancy..." />
+            <marker date="1450031722945" expanded="true" signature="8240:8505" placeholder="SELECT p.nam..Vacancy..." />
+            <marker date="1450031722945" expanded="true" signature="8240:8514" placeholder="SELECT p.nam..Vacancy..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utilities/DBService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Unemployed/AllUnempFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/AdFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacFindFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ac1af8f1-c8ca-479a-998e-d4f050ec266f/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -852,13 +911,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42372882">
           <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
-          <folding>
-            <marker date="1449964603278" expanded="true" signature="-1:-1" placeholder="SELECT sp FR..Sp..." />
-            <marker date="1449964603278" expanded="true" signature="-1:-1" placeholder="SELECT home ..Home..." />
-            <marker date="1449964603278" expanded="true" signature="-1:-1" placeholder="SELECT home ..Home..." />
-            <marker date="1449964603278" expanded="true" signature="-1:-1" placeholder="SELECT home ..HomeV..." />
-            <marker date="1449964603278" expanded="true" signature="-1:-1" placeholder="SELECT stud ..Stud..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -866,7 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.535109">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,7 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49878934">
           <caret line="66" column="63" selection-start-line="63" selection-start-column="7" selection-end-line="66" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,10 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4527845">
           <caret line="226" column="2" selection-start-line="226" selection-start-column="2" selection-end-line="249" selection-end-column="5" />
-          <folding>
-            <marker date="1449953370073" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1449953370073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Unemployed..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,9 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,9 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -921,9 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -931,15 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Unemployed/ProfDelDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,9 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -966,29 +990,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="38" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
           <folding>
-            <element signature="e#3158#3164#0" expanded="true" />
-            <marker date="1449971985170" expanded="true" signature="946:1118" placeholder="SELECT f.id,..Find..." />
-            <marker date="1449971985170" expanded="true" signature="2719:2768" placeholder="DELETE FROM ..." />
-            <marker date="1449971985170" expanded="true" signature="3239:3445" placeholder="SELECT f.id,..Find..." />
-            <marker date="1449971985170" expanded="true" signature="3409:3444" placeholder="SELECT p_id ..Vacancy..." />
-            <marker date="1449971985170" expanded="true" signature="4063:4114" placeholder="DELETE FROM ..." />
+            <element signature="e#3158#3164#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entities/Vacancy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48358864">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entities/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.037199125">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -996,7 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.37636763">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,18 +1015,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/Repository/CompanyRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="52" column="94" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,8 +1033,22 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Unemployed/AllUnempFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Unemployed/ProfDelDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1043,7 +1057,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1053,9 +1067,82 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#4574#4575#0" expanded="false" />
+            <element signature="e#4628#4629#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Company/AllCompFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16630197">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Microsoft SQL Server JDBC Driver 2.0/sqljdbc_2.0/enu/sqljdbc4.jar!/com/microsoft/sqlserver/jdbc/SQLServerPreparedStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.851852">
+          <caret line="638" column="0" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utilities/DBService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Vacancy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#3002#3003#0" expanded="true" />
+            <element signature="e#3030#3031#0" expanded="true" />
+            <element signature="e#3072#3073#0" expanded="true" />
+            <element signature="e#3106#3107#0" expanded="true" />
+            <element signature="e#3138#3139#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#3208#3209#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/AdFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4574#4575#0" expanded="true" />
-            <element signature="e#4628#4629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+          <folding>
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="121" column="94" selection-start-line="121" selection-start-column="94" selection-end-line="121" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1063,17 +1150,7 @@
     <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacFindFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Company/AllCompFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1082,25 +1159,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/VacancyRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="42" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.4897436">
+          <caret line="237" column="45" selection-start-line="237" selection-start-column="45" selection-end-line="237" selection-end-column="45" />
           <folding>
-            <element signature="e#6020#6029#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/CompanyRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5185995">
-          <caret line="52" column="94" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
-          <folding>
-            <marker date="1449969195411" expanded="true" signature="375:407" placeholder="DELETE FROM ..." />
-            <marker date="1449969195411" expanded="true" signature="764:802" placeholder="INSERT INTO ..." />
-            <marker date="1449969195411" expanded="true" signature="1271:1340" placeholder="SELECT name,..Company..." />
-            <marker date="1449969195411" expanded="true" signature="2147:2183" placeholder="SELECT * FRO..Company..." />
-            <marker date="1449969195411" expanded="true" signature="4247:4293" placeholder="SELECT id,na..Company..." />
-            <marker date="1449969195411" expanded="true" signature="5360:5396" placeholder="SELECT * FRO..Company..." />
+            <marker date="1450031722945" expanded="true" signature="375:425" placeholder="DELETE FROM ..." />
+            <marker date="1450031722945" expanded="true" signature="767:815" placeholder="DELETE FROM ..." />
+            <marker date="1450031722945" expanded="true" signature="1296:1605" placeholder="SELECT v.id,..Vacancy..." />
+            <marker date="1450031722945" expanded="true" signature="1572:1604" placeholder="SELECT p_id ..Find..." />
+            <marker date="1450031722945" expanded="true" signature="3965:4026" placeholder="UPDATE Find ..." />
+            <marker date="1450031722945" expanded="true" signature="4049:4100" placeholder="DELETE FROM ..." />
+            <marker date="1450031722945" expanded="true" signature="4123:4191" placeholder="UPDATE Unemp..." />
+            <marker date="1450031722945" expanded="true" signature="4215:4281" placeholder="UPDATE Vacan..." />
+            <marker date="1450031722945" expanded="true" signature="6238:6405" placeholder="SELECT v.id,..Vacancy..." />
+            <marker date="1450031722945" expanded="true" signature="7101:7360" placeholder="SELECT p.nam..Vacancy..." />
+            <marker date="1450031722945" expanded="true" signature="8240:8501" placeholder="SELECT p.nam..Vacancy..." />
+            <marker date="1450031722945" expanded="true" signature="8240:8505" placeholder="SELECT p.nam..Vacancy..." />
+            <marker date="1450031722945" expanded="true" signature="8240:8514" placeholder="SELECT p.nam..Vacancy..." />
           </folding>
         </state>
       </provider>
