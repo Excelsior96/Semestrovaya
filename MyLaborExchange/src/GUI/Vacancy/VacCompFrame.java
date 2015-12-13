@@ -112,7 +112,7 @@ public class VacCompFrame {
 
         };
 
-        JButton bu = new JButton("Создать объявление");
+        JButton bu = new JButton("Сгенерировать объявление");
         ActionListener li = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

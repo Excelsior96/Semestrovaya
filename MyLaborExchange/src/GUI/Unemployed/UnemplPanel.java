@@ -170,8 +170,19 @@ public class UnemplPanel {
 
             }
         };
-        button.addActionListener(allListener);;
+        button.addActionListener(allListener);
         panel.add(button, GUIService.setTextFieldConstraints());
+
+        JButton but = new JButton("Показать архив");
+        ActionListener list = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Archive();
+
+            }
+        };
+        but.addActionListener(list);;
+        panel.add(but, GUIService.setTextFieldConstraints());
 
 
         return panel;

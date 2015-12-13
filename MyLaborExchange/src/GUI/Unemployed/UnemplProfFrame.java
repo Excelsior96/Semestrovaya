@@ -36,6 +36,7 @@ public class UnemplProfFrame {
         final JLabel sp = new JLabel("Семейное положение: " + unemp.getSp());
         final JLabel prof = new JLabel("Профессия: " + unemp.getProf());
         final JLabel stud = new JLabel("Образование: " + unemp.getStud());
+        final JLabel home = new JLabel("Жилищные условия: " + unemp.getHome());
         final JLabel address = new JLabel("Адрес: " + unemp.getAddress());
         final JLabel phone = new JLabel("Телефон: " + unemp.getPhone());
         final JLabel lastwork = new JLabel("Предыдущее место работы: " + unemp.getLastWork());
@@ -49,6 +50,7 @@ public class UnemplProfFrame {
         panel.add(sp, GUIService.setTextFieldConstraints());
         panel.add(prof, GUIService.setTextFieldConstraints());
         panel.add(stud, GUIService.setTextFieldConstraints());
+        panel.add(home, GUIService.setTextFieldConstraints());
         panel.add(address, GUIService.setTextFieldConstraints());
         panel.add(phone, GUIService.setTextFieldConstraints());
         panel.add(lastwork, GUIService.setTextFieldConstraints());
@@ -103,7 +105,6 @@ public class UnemplProfFrame {
             }
         };
         b.addActionListener(l);
-
 
 
         panel.add(but, GUIService.setTextFieldConstraints());

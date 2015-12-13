@@ -20,7 +20,7 @@ public class ProfDelDialog {
         dial.setLayout(new GridBagLayout());
 
         JLabel jLabel = new JLabel("Вы действительно хотите удалить этот профиль?");
-        JLabel lab = new JLabel("Все его заявки будут удалены");
+        JLabel lab = new JLabel("Все его вакансии будут удалены");
         JLabel l = new JLabel("Отменить изменения будет невозможно");
         JButton button = new JButton("Да");
         JButton but = new JButton("Нет");

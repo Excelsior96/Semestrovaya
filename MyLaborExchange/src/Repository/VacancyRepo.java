@@ -91,7 +91,7 @@ public class VacancyRepo {
     }
 
     public static String[][] getCompTable(ArrayList<Vacancy> list) {
-        String[][] data = new String[list.size()][];
+        String[][] data = new String[list.size()][8];
         int i = 0;
         for (Vacancy vac : list) {
             data[i][0] = String.valueOf(vac.getId());
@@ -212,7 +212,7 @@ public class VacancyRepo {
                 "FROM Vacancy AS v, Pos AS p, Company AS c, HomeV AS h\n" +
                 "WHERE v.c_id = ? AND v.p_id = p.id AND c.id = v.c_id AND v.archive=0 AND v.home = h.id  ";
         try {
-            CallableStatement st = con.prepareCall(insert);
+            PreparedStatement st = con.prepareStatement(insert);
             st.setInt(1, id);
             ResultSet set = st.executeQuery();
             while (set.next()) {
@@ -260,6 +260,7 @@ public class VacancyRepo {
         }
         return list;
     }
+
 
 
 }

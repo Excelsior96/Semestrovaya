@@ -33,7 +33,7 @@ public class FindVacFrame {
 
         String[] labels = {"ID", "Должность", "ID компании", "Название компании", "Оплата", "Условия", "Требования", "Жил.условия"};
 
-        String[][] rows = VacancyRepo.getTable(list);
+        String[][] rows = VacancyRepo.getCompTable(list);
 
         JTable table = new JTable(rows, labels);
         table.setEnabled(false);

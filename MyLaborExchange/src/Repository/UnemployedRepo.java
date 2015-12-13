@@ -69,6 +69,35 @@ public class UnemployedRepo {
     }
 
 
+    public static ArrayList<Unemployed> getAllArchive() {
+        ArrayList<Unemployed> list = new ArrayList<Unemployed>();
+        Connection con = DBService.connect();
+        String insert = "SELECT u.id, u.fio, u.age, u.sex, u.adres, u.phone, u.prof, st.stud \n" +
+                "FROM Unemployed AS u, Stud AS st\n" +
+                "WHERE st.id = u.stud AND u.archive = 1";
+        try {
+            CallableStatement st = con.prepareCall(insert);
+            ResultSet set = st.executeQuery();
+            while (set.next()) {
+                list.add(new Unemployed(
+                        set.getInt(1),
+                        set.getString(2),
+                        set.getInt(3),
+                        set.getString(4),
+                        set.getString(5),
+                        set.getString(6),
+                        set.getString(7),
+                        set.getString(8)));
+
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+
     public static String[][] getTable(ArrayList<Unemployed> list) {
 
 
@@ -116,25 +145,66 @@ public class UnemployedRepo {
         try {
             CallableStatement st = con.prepareCall(insert);
             st.setString(1, String.valueOf(id));
+
             ResultSet set = st.executeQuery();
 
-                while (set.next()) {
-                    unemp = new Unemployed(id,
-                            set.getString(2),
-                            set.getInt(3),
-                            set.getString(4),
-                            set.getString(5),
-                            set.getString(6),
-                            set.getString(7),
-                            set.getString(8),
-                            set.getString(9),
-                            set.getString(10),
-                            set.getString(11),
-                            set.getString(12),
-                            set.getInt(13),
-                            set.getString(14)
-                    );
-                }
+            while (set.next()) {
+                unemp = new Unemployed(id,
+                        set.getString(1),
+                        set.getInt(2),
+                        set.getString(3),
+                        set.getString(4),
+                        set.getString(5),
+                        set.getString(6),
+                        set.getString(7),
+                        set.getString(8),
+                        set.getString(9),
+                        set.getString(10),
+                        set.getString(11),
+                        set.getInt(12),
+                        set.getString(13)
+                );
+            }
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return unemp;
+    }
+
+
+    public static Unemployed getArcById(int id) throws UnemployedException {
+
+        String insert = "{CALL getArcById(?)}";
+        Connection con = DBService.connect();
+        Unemployed unemp = null;
+        try {
+            CallableStatement st = con.prepareCall(insert);
+            st.setString(1, String.valueOf(id));
+
+            ResultSet set = st.executeQuery();
+
+            while (set.next()) {
+                unemp = new Unemployed(id,
+                        set.getString(1),
+                        set.getInt(2),
+                        set.getString(3),
+                        set.getString(4),
+                        set.getString(5),
+                        set.getString(6),
+                        set.getString(7),
+                        set.getString(8),
+                        set.getString(9),
+                        set.getString(10),
+                        set.getString(11),
+                        set.getInt(12),
+                        set.getString(13),
+                                set.getString(14),
+                        set.getString(15)
+                );
+            }
 
 
         } catch (SQLException e) {
@@ -187,9 +257,9 @@ public class UnemployedRepo {
             ResultSet set = st.executeQuery();
             while (set.next()) {
                 String archive = "Нет";
-if (set.getByte(9)==1){
-    archive = "Да";
-}
+                if (set.getByte(9) == 1) {
+                    archive = "Да";
+                }
                 list.add(new Unemployed(
                         set.getInt(1),
                         set.getString(2),
@@ -210,12 +280,16 @@ if (set.getByte(9)==1){
         return list;
     }
 
-    public static void deleteById(int id) {
-        String insert = "DELETE FROM Unemployed WHERE id = ?";
+    public static void deleteById(int id){
+        String insert = "IF (SELECT archive FROM Unemployed WHERE id = ?) = 1 BEGIN DELETE FROM Vacancy WHERE id =" +
+                " (SELECT archive FROM FIND WHERE u_id  = ?) END;" +
+                "DELETE FROM Unemployed WHERE id = ?; ";
 
         try {
             PreparedStatement p = DBService.connect().prepareStatement(insert);
             p.setInt(1, id);
+            p.setInt(2, id);
+            p.setInt(3, id);
             p.execute();
 
         } catch (SQLException e) {
@@ -279,4 +353,23 @@ if (set.getByte(9)==1){
     }
 
 
+    public static void retrieve(int id) {
+
+        String insert = "UPDATE Unemployed SET archive = 0 WHERE id = ?;\n" +
+                "UPDATE Vacancy SET archive = 0 WHERE id =\n" +
+                "(SELECT archive FROM Find WHERE u_id = ? AND archive IS  NOT NULL);\n" +
+                "UPDATE Find SET archive = NULL WHERE u_id = ?;\n" +
+                "DELETE FROM Find WHERE u_id = ?";
+
+        try {
+            PreparedStatement p = DBService.connect().prepareStatement(insert);
+            p.setInt(1, id);
+            p.setInt(2, id);
+            p.setInt(3, id);
+            p.setInt(4, id);
+            p.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

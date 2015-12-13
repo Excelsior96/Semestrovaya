@@ -28,15 +28,22 @@ public class ProfDelDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 UnemployedRepo.deleteById(id);
-                UnemplProfFrame.getFrame().dispose();
+                if (UnemplProfFrame.getFrame()!=null){
+                UnemplProfFrame.getFrame().dispose();}
+                if (UnemplProfArcFrame.getFrame()!=null){
+                    UnemplProfArcFrame.getFrame().dispose();}
 
                 dial.dispose();
 
                 JOptionPane.showMessageDialog(dial, "Профиль удален безвозратно...");
-                AllUnempFrame.getFrame().dispose();
-                new AllUnempFrame();
-
-
+               if (AllUnempFrame.getFrame() !=null ) {
+                   AllUnempFrame.getFrame().dispose();
+                   new AllUnempFrame();
+               }
+                if (Archive.getFrame() !=null ) {
+                    Archive.getFrame().dispose();
+                    new Archive();
+                }
             }
         };
         button.addActionListener(listener);

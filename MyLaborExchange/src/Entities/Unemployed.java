@@ -4,6 +4,8 @@ package Entities;
  * Created by Daniel Shchepetov on 07.12.2015.
  */
 public class Unemployed {
+    private String pos;
+    private  String company;
     private int id;
     private String name;
     private int age;
@@ -50,6 +52,24 @@ public class Unemployed {
         this.dismiss = dismiss;
         this.id = id;
         this.archive = archive;
+    }
+    public Unemployed(int id,String name, int age, String sp,String prof, String stud, String lastWork, String lastPos, String dismiss, String home, String address, String phone, int archive,String sex, String company, String pos) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.sp = sp;
+        this.home = home;
+        this.address = address;
+        this.phone = phone;
+        this.stud = stud;
+        this.prof = prof;
+        this.lastWork = lastWork;
+        this.lastPos = lastPos;
+        this.dismiss = dismiss;
+        this.id = id;
+        this.archive = archive;
+        this.company = company;
+        this.pos = pos;
     }
     public Unemployed(int id,String name, int age,String sex, String address, String phone, String stud, String prof) {
         this.id = id;
@@ -193,5 +213,21 @@ public class Unemployed {
 
     public void setArchiveN(String archiveN) {
         this.archiveN = archiveN;
+    }
+
+    public String getPos() {
+        return pos;
+    }
+
+    public void setPos(String pos) {
+        this.pos = pos;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
     }
 }

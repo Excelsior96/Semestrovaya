@@ -77,7 +77,7 @@ public class CompProfFrame {
         final JComboBox homeF = new JComboBox(GUIService.getHomeV());
         panel.add(homeF, GUIService.setTextFieldConstraints());
 
-        final JButton but = new JButton("Разместить заявку");
+        final JButton but = new JButton("Разместить вакансию");
 
         ActionListener lis = new ActionListener() {
             @Override
@@ -122,6 +122,8 @@ public class CompProfFrame {
             }
         };
         b.addActionListener(l);
+
+
 
 
 
