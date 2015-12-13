@@ -4,6 +4,8 @@ import Entities.Company;
 import Entities.Find;
 import Entities.Vacancy;
 import Exceptions.VacancyException;
+import GUI.Company.AllCompFrame;
+import GUI.Company.CompProfFrame;
 import Repository.FindRepo;
 import Repository.VacancyRepo;
 import Utilities.GUIService;
@@ -82,11 +84,18 @@ public class VacCompFrame {
                     VacancyRepo.deleteById(id);
                     JOptionPane.showMessageDialog(panel, "Выполнено");
                     frame.dispose();
+                    //refreshing
+                    AllCompFrame.getFrame().dispose();
+                    new AllCompFrame();
                     new VacCompFrame(comp);
+                    CompProfFrame.getFrame().dispose();;
+                    new CompProfFrame(comp);
                 } catch (VacancyException ex) {
                     JOptionPane.showMessageDialog(panel, ex.getMessage());
                     ex.printStackTrace();
                 }
+
+
 
             }
 
@@ -97,6 +106,7 @@ public class VacCompFrame {
             public void actionPerformed(ActionEvent e) {
                 new VacDelDial(comp.getId());
                 frame.dispose();
+
 
             }
 

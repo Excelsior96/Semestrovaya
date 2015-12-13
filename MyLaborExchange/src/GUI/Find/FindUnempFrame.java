@@ -68,7 +68,7 @@ public class FindUnempFrame {
                     JOptionPane.showMessageDialog(panel, "Ничего не найдено");
                     ex.printStackTrace();
                 }
-
+                field.setText("");
             }
 
         };

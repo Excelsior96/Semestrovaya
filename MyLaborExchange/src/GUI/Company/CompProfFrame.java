@@ -32,7 +32,7 @@ public class CompProfFrame {
         final JLabel name = new JLabel("Название: " + comp.getName());
         final JLabel age = new JLabel("Адрес: " + comp.getAdres());
         final JLabel sex = new JLabel("Телефон: " + comp.getPhone());
-        final JLabel sp = new JLabel("Статистика вакансий: " + comp.getCol());
+        final JLabel sp = new JLabel("Кол-во свободных вакансий: " + comp.getCol());
 
         panel.add(id, GUIService.setTextFieldConstraints());
         panel.add(name, GUIService.setTextFieldConstraints());
@@ -93,6 +93,14 @@ public class CompProfFrame {
 
                     VacancyRepo.addVac(new Vacancy(comp.getId(), pos, Integer.parseInt(pay), cond, req, home));
                     JOptionPane.showMessageDialog(panel, "Успешно!");
+                    posF.setText("");
+                    payF.setText("");
+                    condF.setText("");
+                    reqF.setText("");
+                    AllCompFrame.getFrame().dispose();
+                    new AllCompFrame();
+                    CompProfFrame.getFrame().dispose();;
+                    new CompProfFrame(comp);
                 } catch (VacancyException e1) {
 
                     JOptionPane.showMessageDialog(panel, e1.getMessage());
@@ -100,7 +108,7 @@ public class CompProfFrame {
                     e1.printStackTrace();
                 }
 
-                posF.setText("");
+
             }
         };
 

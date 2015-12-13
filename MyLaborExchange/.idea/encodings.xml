@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/Entities/Company.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Company/AllCompFrame.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Company/CompProfFrame.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Company/DistCompFrame.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Company/DistDialog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Company/ProfDelDialog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Find/FindDelDial.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Find/FindUnempFrame.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Find/FindVacFrame.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Vacancy/VacDelDial.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Repository/CompanyRepo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Utilities/GUIService.java" charset="UTF-8" />
+    <file url="file://D:/Documents/Semestrovaya/MyLaborExchange/src/Entities/Find.java" charset="UTF-8" />
+  </component>
+</project>

@@ -25,7 +25,7 @@ public class AllCompFrame {
         final JPanel panel = new JPanel(new GridBagLayout());
         panel.setBackground(Color.LIGHT_GRAY);
 
-        String[] labels = {"ID", "Название", "Адрес", "Телефон", "Кол-во вакансий"};
+        String[] labels = {"ID", "Название", "Адрес", "Телефон", "Кол-во свободных вакансий"};
         ArrayList<Company> list = CompanyRepo.getAll();
         String[][] rows = CompanyRepo.getTable(list);
 

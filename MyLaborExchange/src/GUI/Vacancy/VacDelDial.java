@@ -1,5 +1,7 @@
 package GUI.Vacancy;
 
+import GUI.Company.AllCompFrame;
+import GUI.Company.CompProfFrame;
 import Repository.VacancyRepo;
 import Utilities.GUIService;
 
@@ -29,6 +31,9 @@ public class VacDelDial {
                 VacFindFrame.getFrame().dispose();
                 dial.dispose();
                 JOptionPane.showMessageDialog(dial, "Все заявки были удалены");
+                AllCompFrame.getFrame().dispose();
+                new AllCompFrame();
+
 
             }
         };
