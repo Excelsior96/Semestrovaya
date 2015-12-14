@@ -182,8 +182,8 @@ public class UnemployedRepo {
         Unemployed unemp = null;
         try {
             CallableStatement st = con.prepareCall(insert);
-            st.setString(1, String.valueOf(id));
-
+            st.setInt(1, id);
+            st.execute();
             ResultSet set = st.executeQuery();
 
             while (set.next()) {
@@ -201,7 +201,7 @@ public class UnemployedRepo {
                         set.getString(11),
                         set.getInt(12),
                         set.getString(13),
-                                set.getString(14),
+                        set.getString(14),
                         set.getString(15)
                 );
             }
@@ -280,7 +280,7 @@ public class UnemployedRepo {
         return list;
     }
 
-    public static void deleteById(int id){
+    public static void deleteById(int id) {
         String insert = "IF (SELECT archive FROM Unemployed WHERE id = ?) = 1 BEGIN DELETE FROM Vacancy WHERE id =" +
                 " (SELECT archive FROM FIND WHERE u_id  = ?) END;" +
                 "DELETE FROM Unemployed WHERE id = ?; ";

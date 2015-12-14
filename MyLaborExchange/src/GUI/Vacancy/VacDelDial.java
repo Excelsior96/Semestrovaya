@@ -1,5 +1,6 @@
 package GUI.Vacancy;
 
+import Exceptions.VacancyException;
 import GUI.Company.AllCompFrame;
 import GUI.Company.CompProfFrame;
 import Repository.VacancyRepo;
@@ -19,7 +20,7 @@ public class VacDelDial {
         dial.setBounds(200, 200, 350, 200);
         dial.setLayout(new GridBagLayout());
 
-        JLabel jLabel = new JLabel("Вы действительно хотите удалить все заявки?");
+        JLabel jLabel = new JLabel("Вы действительно хотите удалить все вакансии?");
 
         JButton button = new JButton("Да");
         JButton but = new JButton("Нет");
@@ -27,12 +28,16 @@ public class VacDelDial {
         ActionListener listener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+
                 VacancyRepo.deleteAll(id);
-                VacFindFrame.getFrame().dispose();
+                VacCompFrame.getFrame().dispose();
                 dial.dispose();
-                JOptionPane.showMessageDialog(dial, "Все заявки были удалены");
+                JOptionPane.showMessageDialog(dial, "Все вакансии были удалены");
+
                 AllCompFrame.getFrame().dispose();
                 new AllCompFrame();
+
 
 
             }

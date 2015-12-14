@@ -103,14 +103,19 @@ public class VacCompFrame {
         ActionListener l = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new VacDelDial(comp.getId());
-                frame.dispose();
 
+                try {
+                    VacancyRepo.checkAllID(comp.getId());
 
+                    new VacDelDial(comp.getId());
+
+                } catch (VacancyException e1) {
+                    JOptionPane.showMessageDialog(panel, e1.getMessage());
+                    e1.printStackTrace();
+                }
             }
 
-
-        };
+            };
 
         JButton bu = new JButton("Сгенерировать объявление");
         ActionListener li = new ActionListener() {
@@ -119,6 +124,7 @@ public class VacCompFrame {
                 String id = field.getText();
                 try { //Validation
                     VacancyRepo.intValidator(id);
+                    VacancyRepo.checkID(Integer.parseInt(id));
                    ArrayList list = VacancyRepo.getAdById(Integer.parseInt(id), comp.getId());
                      new AdFrame(list);
 
@@ -136,8 +142,16 @@ public class VacCompFrame {
             ActionListener liste = new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+
+                    try {
+                        VacancyRepo.checkAllID(comp.getId());
                         ArrayList<Vacancy> list = VacancyRepo.getAllAd(comp.getId());
                         new AdFrame(list);
+                    } catch (VacancyException e1) {
+                        JOptionPane.showMessageDialog(panel, e1.getMessage());
+                        e1.printStackTrace();
+                    }
+
                 }
             };
 

@@ -16,8 +16,10 @@ public class VacancyRepo {
 
     public static void deleteAll(int uid) {
         String insert = "DELETE FROM Vacancy WHERE c_id = ? AND archive = 0";
-        Connection con = DBService.connect();
         try {
+
+            Connection con = DBService.connect();
+
             PreparedStatement st = con.prepareStatement(insert);
             st.setInt(1, uid);
             st.execute();
@@ -26,17 +28,19 @@ public class VacancyRepo {
         }
 
     }
-    public static void deleteById(String id) {
+
+    public static void deleteById(String id) throws VacancyException {
         String insert = "DELETE FROM Vacancy WHERE id = ? AND archive = 0";
-        Connection con = DBService.connect();
         try {
+            checkID(Integer.parseInt(id));
+            Connection con = DBService.connect();
             PreparedStatement st = con.prepareStatement(insert);
             st.setInt(1, Integer.parseInt(id));
             st.execute();
         } catch (SQLException e) {
             e.printStackTrace();
-        }
 
+        }
     }
 
     public static ArrayList<Vacancy> getByFindId(String id) {
@@ -68,12 +72,12 @@ public class VacancyRepo {
 
     }
 
-    public static String getAd(int id){
+    public static String getAd(int id) {
 
         String insert = "SELECT name, ";
         Connection con = DBService.connect();
 
-      return null;
+        return null;
     }
 
 
@@ -205,6 +209,7 @@ public class VacancyRepo {
         }
         return list;
     }
+
     public static ArrayList<Vacancy> getAllAd(int id) {
         ArrayList<Vacancy> list = new ArrayList<Vacancy>();
         Connection con = DBService.connect();
@@ -261,6 +266,40 @@ public class VacancyRepo {
         return list;
     }
 
+    public static void checkID(int id) throws VacancyException {
+        try {
+            String insert = "SELECT id FROM Vacancy WHERE id = ? AND archive = 0";
+            Connection con = DBService.connect();
+            PreparedStatement st = con.prepareStatement(insert);
+            st.setInt(1, id);
+            st.execute();
+            ResultSet rs = st.executeQuery();
+            if (rs.next()) {
 
+            } else {
+                throw new VacancyException("Не найдена вакансия с таким ID");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void checkAllID(int id) throws VacancyException {
+        try {
+            String insert = "SELECT id FROM Vacancy WHERE c_id = ? AND archive = 0";
+            Connection con = DBService.connect();
+            PreparedStatement st = con.prepareStatement(insert);
+            st.setInt(1, id);
+            st.execute();
+            ResultSet rs = st.executeQuery();
+            if (rs.next()) {
+
+            } else {
+                throw new VacancyException("Вакансии не обнаружены");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
 }
