@@ -333,6 +333,19 @@ public class UnemployedRepo {
 
     }
 
+    public static void deleteArchive(int id) {
+        String insert = "DELETE FROM Unemployed WHERE archive=1 AND id IN (SELECT u_id FROM Find WHERE archive IN" +
+                " (SELECT id FROM Vacancy WHERE c_id=?)); UPDATE Vacancy SET archive = 0 WHERE c_id=?";
+        try {
+            PreparedStatement st = DBService.connect().prepareStatement(insert);
+            st.setInt(1, id);
+            st.setInt(2, id);
+            st.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static boolean unempDist(String name, int age, String prof) {
         String insert = "SELECT * FROM Unemployed WHERE fio = ? AND age = ? AND prof = ?";
 

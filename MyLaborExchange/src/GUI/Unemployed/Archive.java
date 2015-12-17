@@ -24,9 +24,8 @@ public class Archive {
         frame.setLayout(new BorderLayout());
         final JPanel panel = new JPanel(new GridBagLayout());
         panel.setBackground(Color.LIGHT_GRAY);
-
-        String[] labels = {"ID", "ФИО", "Год рождения", "Пол", "Адрес", "Телефон", "Профессия", "Образование"};
         ArrayList<Unemployed> list = UnemployedRepo.getAllArchive();
+        String[] labels = {"ID", "ФИО", "Год рождения", "Пол", "Адрес", "Телефон", "Профессия", "Образование"};
         String[][] rows = UnemployedRepo.getTable(list);
 
         JTable table = new JTable(rows, labels);
@@ -44,14 +43,14 @@ public class Archive {
         final JTextField field = new JTextField();
         panel.add(field, GUIService.setTextFieldConstraints());
 
-        JButton  button = new JButton("Показать полный профиль");
+        JButton button = new JButton("Показать полный профиль");
         ActionListener listener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String id = field.getText();
                 try { //Validation
                     UnemployedRepo.intValidator(id);
-                   Unemployed unemp = UnemployedRepo.getArcById(Integer.parseInt(id));
+                    Unemployed unemp = UnemployedRepo.getArcById(Integer.parseInt(id));
                     if (unemp != null) {
                         new UnemplProfArcFrame(unemp);
 
@@ -71,6 +70,7 @@ public class Archive {
 
         };
         button.addActionListener(listener);
+
         panel.add(button, GUIService.setLabelConstraints());
 
         frame.add(panel, BorderLayout.CENTER);

@@ -1,9 +1,13 @@
 package GUI.Company;
 
 import Entities.Company;
+import Entities.Unemployed;
 import Entities.Vacancy;
 import Exceptions.VacancyException;
+import GUI.Unemployed.Archive;
+import GUI.Unemployed.ArchiveComp;
 import GUI.Vacancy.VacCompFrame;
+import Repository.CompanyRepo;
 import Repository.VacancyRepo;
 import Utilities.GUIService;
 
@@ -11,6 +15,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 /**
  * Created by Daniel Shchepetov on 13.12.2015.
@@ -44,7 +49,13 @@ public class CompProfFrame {
         ActionListener list = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ProfDelDialog(comp.getId());
+                ArrayList<Unemployed> list = CompanyRepo.hasUnemp(comp.getId());
+                if (list.size() != 0) {
+                    new ArchiveComp(comp.getId());
+                    JOptionPane.showMessageDialog(panel, "В архиве обнаружены пользователи, зарегистрированные в этой фирме. Удаление невозможно");
+                } else {
+                    new ProfDelDialog(comp.getId());
+                }
             }
 
         };
@@ -86,7 +97,7 @@ public class CompProfFrame {
                 String pay = payF.getText();
                 String cond = condF.getText();
                 String req = reqF.getText();
-                String home = (String)homeF.getSelectedItem();
+                String home = (String) homeF.getSelectedItem();
 
                 try {
                     VacancyRepo.intValidator(pay);
@@ -99,7 +110,8 @@ public class CompProfFrame {
                     reqF.setText("");
                     AllCompFrame.getFrame().dispose();
                     new AllCompFrame();
-                    CompProfFrame.getFrame().dispose();;
+                    CompProfFrame.getFrame().dispose();
+                    ;
                     new CompProfFrame(comp);
                 } catch (VacancyException e1) {
 
@@ -122,9 +134,6 @@ public class CompProfFrame {
             }
         };
         b.addActionListener(l);
-
-
-
 
 
         panel.add(but, GUIService.setTextFieldConstraints());

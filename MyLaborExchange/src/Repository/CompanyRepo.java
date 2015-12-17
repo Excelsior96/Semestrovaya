@@ -1,6 +1,7 @@
 package Repository;
 
 import Entities.Company;
+import Entities.Unemployed;
 import Exceptions.CompanyException;
 import Utilities.DBService;
 
@@ -48,9 +49,9 @@ public class CompanyRepo {
     }
 
 
-    public static Company getById(int id) throws CompanyException {
+    public static Company getById(int id)  {
 
-        String insert = "SELECT name,adres, phone, col FROM Company WHERE archive=0 AND id = ?";
+        String insert = "SELECT name,adres, phone, col FROM Company WHERE id = ?";
         Connection con = DBService.connect();
         Company comp = null;
         try {
@@ -178,6 +179,34 @@ public class CompanyRepo {
         return data;
     }
 
+    public static ArrayList<Unemployed> hasUnemp(int id){
+        ArrayList<Unemployed> list = new ArrayList<Unemployed>();
+        String insert = "SELECT u.id, u.fio, u.age, u.sex, u.adres, u.phone, u.prof, st.stud \n" +
+                " FROM Unemployed AS u, Stud AS st WHERE u.id IN (SELECT u_id FROM Find WHERE archive IN\n" +
+                "  (SELECT id FROM Vacancy WHERE c_id = ?)) AND u.stud = st.id; ";
+        try {
+            PreparedStatement st = DBService.connect().prepareStatement(insert);
+            st.setInt(1, id);
+            st.execute();
+            ResultSet set = st.executeQuery();
+            while (set.next()){
+                list.add(new Unemployed(
+                        set.getInt(1),
+                        set.getString(2),
+                        set.getInt(3),
+                        set.getString(4),
+                        set.getString(5),
+                        set.getString(6),
+                        set.getString(7),
+                        set.getString(8)));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return list;
+    }
+
     public static boolean unempDist(String name) {
         String insert = "SELECT * FROM Company WHERE name = ?";
 
@@ -204,4 +233,6 @@ public class CompanyRepo {
         }
 
     }
+
+
 }
