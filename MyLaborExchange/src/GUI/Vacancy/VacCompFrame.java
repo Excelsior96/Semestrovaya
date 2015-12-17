@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class VacCompFrame {
     private static JFrame frame;
 
-    public VacCompFrame(Company comp) {
+    public VacCompFrame(Company comp, int cid) {
         frame = new JFrame();
         frame.setBounds(30, 30, 1200, 700);
 
@@ -87,9 +87,9 @@ public class VacCompFrame {
                     //refreshing
                     AllCompFrame.getFrame().dispose();
                     new AllCompFrame();
-                    new VacCompFrame(comp);
+                    new VacCompFrame(comp, cid);
                     CompProfFrame.getFrame().dispose();
-                    new CompProfFrame(comp);
+                    new CompProfFrame(cid);
                 } catch (VacancyException ex) {
                     JOptionPane.showMessageDialog(panel, ex.getMessage());
                     ex.printStackTrace();
@@ -107,7 +107,7 @@ public class VacCompFrame {
                 try {
                     VacancyRepo.checkAllID(comp.getId());
 
-                    new VacDelDial(comp.getId());
+                    new VacDelDial(comp, cid);
 
                 } catch (VacancyException e1) {
                     JOptionPane.showMessageDialog(panel, e1.getMessage());

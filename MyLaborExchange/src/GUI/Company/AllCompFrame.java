@@ -53,7 +53,7 @@ public class AllCompFrame {
         CompanyRepo.intValidator(id);
           Company comp = CompanyRepo.getById(Integer.parseInt(id));
          if (comp != null) {
-            new CompProfFrame(comp);
+            new CompProfFrame(Integer.parseInt(id));
 
                         field.setText("");
 

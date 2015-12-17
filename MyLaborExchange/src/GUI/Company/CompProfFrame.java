@@ -24,14 +24,14 @@ public class CompProfFrame {
     private static JFrame frame;
     private final static Font TOPFONT = new Font("Arial", Font.BOLD, 22);
 
-    public CompProfFrame(final Company comp) {
+    public CompProfFrame(int cid) {
         frame = new JFrame();
         frame.setBounds(20, 20, 600, 600);
         final JPanel panel = new JPanel(new GridBagLayout());
         panel.setBackground(Color.LIGHT_GRAY);
         JLabel label = new JLabel("Профиль");
         label.setFont(TOPFONT);
-
+Company comp = CompanyRepo.getById(cid);
         panel.add(label, GUIService.setTopLabelConstraints());
         final JLabel id = new JLabel("ID: " + comp.getId());
         final JLabel name = new JLabel("Название: " + comp.getName());
@@ -112,7 +112,7 @@ public class CompProfFrame {
                     new AllCompFrame();
                     CompProfFrame.getFrame().dispose();
                     ;
-                    new CompProfFrame(comp);
+                    new CompProfFrame(cid);
                 } catch (VacancyException e1) {
 
                     JOptionPane.showMessageDialog(panel, e1.getMessage());
@@ -130,7 +130,7 @@ public class CompProfFrame {
         ActionListener l = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new VacCompFrame(comp);
+                new VacCompFrame(comp, cid);
             }
         };
         b.addActionListener(l);

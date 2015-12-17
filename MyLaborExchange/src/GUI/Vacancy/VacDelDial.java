@@ -1,5 +1,6 @@
 package GUI.Vacancy;
 
+import Entities.Company;
 import Exceptions.VacancyException;
 import GUI.Company.AllCompFrame;
 import GUI.Company.CompProfFrame;
@@ -15,7 +16,7 @@ import java.awt.event.ActionListener;
  * Created by Daniel Shchepetov on 13.12.2015.
  */
 public class VacDelDial {
-    public VacDelDial(final int id) {
+    public VacDelDial(Company comp, int cid) {
         final JDialog dial = new JDialog();
         dial.setBounds(200, 200, 350, 200);
         dial.setLayout(new GridBagLayout());
@@ -30,13 +31,15 @@ public class VacDelDial {
             public void actionPerformed(ActionEvent e) {
 
 
-                VacancyRepo.deleteAll(id);
+                VacancyRepo.deleteAll(comp.getId());
                 VacCompFrame.getFrame().dispose();
                 dial.dispose();
                 JOptionPane.showMessageDialog(dial, "Все вакансии были удалены");
 
                 AllCompFrame.getFrame().dispose();
                 new AllCompFrame();
+                CompProfFrame.getFrame().dispose();
+                new CompProfFrame(cid);
 
 
 
