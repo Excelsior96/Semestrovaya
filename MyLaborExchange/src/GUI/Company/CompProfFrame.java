@@ -135,9 +135,20 @@ Company comp = CompanyRepo.getById(cid);
         b.addActionListener(l);
 
 
+        JButton bu = new JButton("Редактировать профиль");
+
+        ActionListener li =  new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new ProfRed(comp);
+            }
+        };
+        bu.addActionListener(li);
+
         panel.add(but, GUIService.setTextFieldConstraints());
         panel.add(b, GUIService.setTextFieldConstraints());
         panel.add(button, GUIService.setTextFieldConstraints());
+        panel.add(bu, GUIService.setTextFieldConstraints());
 
 
         frame.add(panel);

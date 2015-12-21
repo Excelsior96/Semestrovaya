@@ -33,7 +33,6 @@ public class CompanyRepo {
         check(comp);
         notIntValidator(comp.getName());
         notIntValidator(comp.getAdres());
-        notIntValidator(comp.getPhone());
 
         String insert = "INSERT INTO Company VALUES (?,?,?,0,0)";
         Connection con = DBService.connect();
@@ -49,6 +48,31 @@ public class CompanyRepo {
             e.printStackTrace();
         }
 
+    }
+
+
+    public static void update(Company comp) throws CompanyException {
+        check(comp);
+
+        notIntValidator(comp.getName());
+        notIntValidator(comp.getAdres());
+        intValidator(comp.getPhone());
+
+
+        String insert = "UPDATE Company SET name = ?, adres = ?, phone = ? WHERE id = ?";
+        Connection con = DBService.connect();
+
+        try {
+            CallableStatement st = con.prepareCall(insert);
+            st.setInt(4, comp.getId());
+            st.setString(1, comp.getName());
+            st.setString(2, comp.getAdres());
+            st.setString(3, comp.getPhone());
+            st.execute();
+        } catch (SQLException e) {
+
+            e.printStackTrace();
+        }
     }
 
 

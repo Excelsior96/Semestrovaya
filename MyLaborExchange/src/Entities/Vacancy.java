@@ -18,7 +18,7 @@ public class Vacancy {
     private String phone;
     private String adres;
 
-    public Vacancy(int id, String pos, int c_id, String company, int payment, String cond, String req, String home ) {
+    public Vacancy(int id, String pos, int c_id, String company, int payment, String cond, String req, String home) {
         this.id = id;
         this.c_id = c_id;
         this.payment = payment;
@@ -58,6 +58,16 @@ public class Vacancy {
         this.phone = phone;
         this.adres = adres;
     }
+
+    public Vacancy(String id, String string, int anInt, String string1, String string2, String string3) {
+        this.id = Integer.parseInt(id);
+        this.pos = string;
+        this.payment = anInt;
+        this.cond = string1;
+        this.req = string2;
+        this.home = string3;
+    }
+
 
     public int getId() {
         return id;

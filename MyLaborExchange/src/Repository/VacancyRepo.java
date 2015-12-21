@@ -1,5 +1,6 @@
 package Repository;
 
+import Entities.Company;
 import Entities.Vacancy;
 import Exceptions.UnemployedException;
 import Exceptions.VacancyException;
@@ -42,6 +43,28 @@ public class VacancyRepo {
             e.printStackTrace();
 
         }
+    }
+
+    public static Vacancy getById(String id) throws VacancyException {
+        String insert = "SELECT p.name, v.payment, v.cond, v.req, h.home FROM Vacancy AS v,  Pos AS p, homeV AS h WHERE v.id = ? AND v.archive = 0" +
+                " AND v.p_id = p.id AND v.home = h.id";
+        Vacancy vac = null;
+        try {
+
+            checkID(Integer.parseInt(id));
+            Connection con = DBService.connect();
+            PreparedStatement st = con.prepareStatement(insert);
+            st.setInt(1, Integer.parseInt(id));
+            st.execute();
+            ResultSet set = st.executeQuery();
+            while (set.next()) {
+                vac = new Vacancy(id, set.getString(1), set.getInt(2), set.getString(3), set.getString(4), set.getString(5));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+
+        }
+        return vac;
     }
 
     public static ArrayList<Vacancy> getByFindId(String id) {
@@ -113,7 +136,7 @@ public class VacancyRepo {
     }
 
     public static void intValidator(String age) throws VacancyException {
-        final String PATTERN = "^[^-][0-9][0-9]*$";
+        final String PATTERN = "^[^-0][0-9][0-9]*";
         Pattern pattern = Pattern.compile(PATTERN);
         Matcher matcher = pattern.matcher(age);
         if (!matcher.matches()) {
@@ -171,8 +194,6 @@ public class VacancyRepo {
         }
 
     }
-
-
 
 
     private static void check(Vacancy vac) throws VacancyException {
@@ -307,6 +328,7 @@ public class VacancyRepo {
             e.printStackTrace();
         }
     }
+
     public static void notIntValidator(String str) throws VacancyException {
         final String PATTERN = "[а-я]*[А-Я]*[0-9]*-*[0-9][0-9]*";
         Pattern pattern = Pattern.compile(PATTERN);
@@ -316,5 +338,33 @@ public class VacancyRepo {
         }
 
 
+    }
+
+    public static void update(Vacancy v) throws VacancyException {
+        String insert = "DECLARE @p_id INT, @home INT;\n" +
+                "SET @p_id = (SELECT id FROM Pos WHERE \"name\" = ?)\n" +
+                "SET @home = (SELECT id FROM HomeV WHERE home = ?)\n" +
+                "UPDATE Vacancy SET p_id = @p_id, payment = ?, cond = ?, req = ?, home = @home WHERE id = ?;";
+        try {
+            check(v);
+            notIntValidator(v.getPos());
+            notIntValidator(v.getCond());
+            notIntValidator(v.getReq());
+            intValidator(String.valueOf(v.getPayment()));
+
+            PreparedStatement st = DBService.connect().prepareStatement(insert);
+            st.setString(1, v.getPos());
+            st.setString(2, v.getHome());
+            st.setInt(3, v.getPayment());
+            st.setString(4, v.getCond());
+            st.setString(5, v.getReq());
+            st.setInt(6, v.getId());
+
+            st.execute();
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

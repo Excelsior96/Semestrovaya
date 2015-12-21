@@ -35,46 +35,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UnemplProfFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/Unemployed/UnemplProfFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="121" column="20" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProfRed.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/Unemployed/ProfRed.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="135" column="50" selection-start-line="135" selection-start-column="50" selection-end-line="135" selection-end-column="50" />
+              <caret line="149" column="1" selection-start-line="17" selection-start-column="4" selection-end-line="149" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/Unemployed/SearchFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Unemployed.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entities/Unemployed.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -82,8 +50,8 @@
       <file leaf-file-name="UnemployedRepo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Repository/UnemployedRepo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="343" column="56" selection-start-line="343" selection-start-column="56" selection-end-line="343" selection-end-column="56" />
+            <state vertical-scroll-proportion="159.72414">
+              <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
               <folding>
                 <marker date="1450688829214" expanded="true" signature="2678:2862" placeholder="SELECT u.id,..Unemployed..." />
                 <marker date="1450688829214" expanded="true" signature="9466:9624" placeholder="IF (SELECT a..." />
@@ -107,25 +75,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VacancyRepo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VacancyRepo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Repository/VacancyRepo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.318">
-              <caret line="119" column="53" selection-start-line="119" selection-start-column="53" selection-end-line="119" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="138" column="37" selection-start-line="138" selection-start-column="37" selection-end-line="138" selection-end-column="37" />
               <folding>
-                <marker date="1450688829222" expanded="true" signature="414:464" placeholder="DELETE FROM ..." />
-                <marker date="1450688829222" expanded="true" signature="837:885" placeholder="DELETE FROM ..." />
-                <marker date="1450688829222" expanded="true" signature="1413:1722" placeholder="SELECT v.id,..Vacancy..." />
-                <marker date="1450688829222" expanded="true" signature="1689:1721" placeholder="SELECT p_id ..Find..." />
-                <marker date="1450688829222" expanded="true" signature="4099:4160" placeholder="UPDATE Find ..." />
-                <marker date="1450688829222" expanded="true" signature="4183:4234" placeholder="DELETE FROM ..." />
-                <marker date="1450688829222" expanded="true" signature="4257:4325" placeholder="UPDATE Unemp..." />
-                <marker date="1450688829222" expanded="true" signature="4349:4415" placeholder="UPDATE Vacan..." />
-                <marker date="1450688829222" expanded="true" signature="6454:6621" placeholder="SELECT v.id,..Vacancy..." />
-                <marker date="1450688829222" expanded="true" signature="7318:7577" placeholder="SELECT p.nam..Vacancy..." />
-                <marker date="1450688829222" expanded="true" signature="8462:8736" placeholder="SELECT p.nam..Vacancy..." />
-                <marker date="1450688829222" expanded="true" signature="9557:9608" placeholder="SELECT id FR..Vacancy..." />
-                <marker date="1450688829222" expanded="true" signature="10167:10220" placeholder="SELECT id FR..Vacancy..." />
+                <marker date="1450701379038" expanded="true" signature="439:489" placeholder="DELETE FROM ..." />
+                <marker date="1450701379038" expanded="true" signature="862:910" placeholder="DELETE FROM ..." />
+                <marker date="1450701379038" expanded="true" signature="1341:1462" placeholder="SELECT FROM ..Vacancy..." />
+                <marker date="1450701379038" expanded="true" signature="1341:1519" placeholder="SELECT p.nam..Vacancy..." />
+                <marker date="1450701379038" expanded="true" signature="1388:1462" placeholder="DELETE FROM ..." />
+                <marker date="1450701379038" expanded="true" signature="2316:2625" placeholder="SELECT v.id,..Vacancy..." />
+                <marker date="1450701379038" expanded="true" signature="2592:2624" placeholder="SELECT p_id ..Find..." />
+                <marker date="1450701379038" expanded="true" signature="5002:5063" placeholder="UPDATE Find ..." />
+                <marker date="1450701379038" expanded="true" signature="5086:5137" placeholder="DELETE FROM ..." />
+                <marker date="1450701379038" expanded="true" signature="5160:5228" placeholder="UPDATE Unemp..." />
+                <marker date="1450701379038" expanded="true" signature="5252:5318" placeholder="UPDATE Vacan..." />
+                <marker date="1450701379038" expanded="true" signature="7355:7522" placeholder="SELECT v.id,..Vacancy..." />
+                <marker date="1450701379038" expanded="true" signature="8219:8478" placeholder="SELECT p.nam..Vacancy..." />
+                <marker date="1450701379038" expanded="true" signature="9363:9637" placeholder="SELECT p.nam..Vacancy..." />
+                <marker date="1450701379038" expanded="true" signature="10458:10509" placeholder="SELECT id FR..Vacancy..." />
+                <marker date="1450701379038" expanded="true" signature="11068:11121" placeholder="SELECT id FR..Vacancy..." />
+                <marker date="1450701379038" expanded="true" signature="12021:12049" placeholder="DECLARE @p_i..." />
+                <marker date="1450701379038" expanded="true" signature="12021:12310" placeholder="UPDATE Vacan..." />
+                <marker date="1450701379038" expanded="true" signature="12073:12124" placeholder="SET @p_id = ..." />
+                <marker date="1450701379038" expanded="true" signature="12073:12310" placeholder="SET @p_id = ..." />
+                <marker date="1450701379038" expanded="true" signature="12086:12110" placeholder="SELECT id FR..Pos..." />
+                <marker date="1450701379038" expanded="true" signature="12086:12123" placeholder="SELECT id FR..Pos..." />
+                <marker date="1450701379038" expanded="true" signature="12147:12196" placeholder="SET @home = ..." />
+                <marker date="1450701379038" expanded="true" signature="12160:12195" placeholder="SELECT id FR..HomeV..." />
+                <marker date="1450701379038" expanded="true" signature="12219:12309" placeholder="UPDATE Vacan..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBLogs.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DBLogs.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.50240386">
+              <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vacancy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entities/Vacancy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding>
+                <element signature="e#1887#1888#0" expanded="true" />
+                <element signature="e#3042#3043#0" expanded="true" />
+                <element signature="e#3068#3069#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,37 +139,29 @@
         <entry file="file://$PROJECT_DIR$/src/GUI/Company/CompProfFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+              <caret line="133" column="10" selection-start-line="133" selection-start-column="10" selection-end-line="133" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PosRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/PosRepo.java">
+      <file leaf-file-name="VacCompFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="52" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1450687738963" expanded="true" signature="551:577" placeholder="INSERT INTO ..." />
-                <marker date="1450687738963" expanded="true" signature="991:1021" placeholder="SELECT * FRO..Pos..." />
-              </folding>
+              <caret line="168" column="47" selection-start-line="168" selection-start-column="47" selection-end-line="168" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FindRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/FindRepo.java">
+      <file leaf-file-name="VacRed.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacRed.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
+              <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
               <folding>
-                <marker date="1450688829230" expanded="true" signature="928:1100" placeholder="SELECT f.id,..Find..." />
-                <marker date="1450688829230" expanded="true" signature="2507:2556" placeholder="DELETE FROM ..." />
-                <marker date="1450688829230" expanded="true" signature="3027:3233" placeholder="SELECT f.id,..Find..." />
-                <marker date="1450688829230" expanded="true" signature="3197:3232" placeholder="SELECT p_id ..Vacancy..." />
-                <marker date="1450688829230" expanded="true" signature="3851:3902" placeholder="DELETE FROM ..." />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,19 +171,30 @@
         <entry file="file://$PROJECT_DIR$/src/Repository/CompanyRepo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="235" column="53" selection-start-line="235" selection-start-column="53" selection-end-line="235" selection-end-column="53" />
+              <caret line="254" column="30" selection-start-line="254" selection-start-column="30" selection-end-line="254" selection-end-column="30" />
               <folding>
-                <marker date="1450688829205" expanded="true" signature="403:435" placeholder="DELETE FROM ..." />
-                <marker date="1450688829205" expanded="true" signature="917:955" placeholder="INSERT INTO ..." />
-                <marker date="1450688829205" expanded="true" signature="1400:1455" placeholder="SELECT name,..Company..." />
-                <marker date="1450688829205" expanded="true" signature="2262:2298" placeholder="SELECT * FRO..Company..." />
-                <marker date="1450688829205" expanded="true" signature="4368:4414" placeholder="SELECT id,na..Company..." />
-                <marker date="1450688829205" expanded="true" signature="5555:5817" placeholder="SELECT u.id,..Unemployed..." />
-                <marker date="1450688829205" expanded="true" signature="5695:5797" placeholder="SELECT u_id ..Find..." />
-                <marker date="1450688829205" expanded="true" signature="5759:5796" placeholder="SELECT id FR..Vacancy..." />
-                <marker date="1450688829205" expanded="true" signature="6623:6659" placeholder="SELECT * FRO..Company..." />
-                <marker date="1450688829205" expanded="true" signature="7654:7715" placeholder="SELECT id,na..Company..." />
+                <marker date="1450696573473" expanded="true" signature="403:435" placeholder="DELETE FROM ..." />
+                <marker date="1450696573473" expanded="true" signature="875:913" placeholder="INSERT INTO ..." />
+                <marker date="1450696573473" expanded="true" signature="1529:1591" placeholder="UPDATE Compa..." />
+                <marker date="1450696573473" expanded="true" signature="2075:2130" placeholder="SELECT name,..Company..." />
+                <marker date="1450696573473" expanded="true" signature="2937:2973" placeholder="SELECT * FRO..Company..." />
+                <marker date="1450696573473" expanded="true" signature="5043:5089" placeholder="SELECT id,na..Company..." />
+                <marker date="1450696573473" expanded="true" signature="6230:6492" placeholder="SELECT u.id,..Unemployed..." />
+                <marker date="1450696573473" expanded="true" signature="6370:6472" placeholder="SELECT u_id ..Find..." />
+                <marker date="1450696573473" expanded="true" signature="6434:6471" placeholder="SELECT id FR..Vacancy..." />
+                <marker date="1450696573473" expanded="true" signature="7298:7334" placeholder="SELECT * FRO..Company..." />
+                <marker date="1450696573473" expanded="true" signature="8329:8390" placeholder="SELECT id,na..Company..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VacDelDial.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacDelDial.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -211,14 +218,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/GUI/Find/FindDelDial.java" />
         <option value="$PROJECT_DIR$/src/GUI/Unemployed/DistUnempFrame.java" />
-        <option value="$PROJECT_DIR$/src/Entities/Company.java" />
         <option value="$PROJECT_DIR$/src/GUI/Company/DistDialog.java" />
         <option value="$PROJECT_DIR$/src/GUI/Company/DistCompFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI/Find/VacFindFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI/Vacancy/VacFindFrame.java" />
         <option value="D:/Documents/Semestrovaya/MyLaborExchange/src/Entities/Find.java" />
         <option value="$PROJECT_DIR$/src/GUI/Find/FindUnempFrame.java" />
-        <option value="$PROJECT_DIR$/src/Entities/Vacancy.java" />
         <option value="$PROJECT_DIR$/src/GUI/Vacancy/AdFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI/Find/FindVacFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI/Unemployed/UnemplProfArcFrame.java" />
@@ -227,7 +232,6 @@
         <option value="$PROJECT_DIR$/src/GUI/Unemployed/Archive.java" />
         <option value="$PROJECT_DIR$/src/GUI/Unemployed/ArchiveComp.java" />
         <option value="$PROJECT_DIR$/src/GUI/Company/AllCompFrame.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI/Vacancy/VacDelDial.java" />
         <option value="$PROJECT_DIR$/src/GUI/Unemployed/AllUnempFrame.java" />
         <option value="$PROJECT_DIR$/src/Exceptions/PosException.java" />
@@ -244,11 +248,17 @@
         <option value="$PROJECT_DIR$/src/GUI/Unemployed/ProfRed.java" />
         <option value="$PROJECT_DIR$/src/GUI/Unemployed/SearchFrame.java" />
         <option value="$PROJECT_DIR$/src/Repository/PosRepo.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Company/CompProfFrame.java" />
-        <option value="$PROJECT_DIR$/src/Repository/CompanyRepo.java" />
         <option value="$PROJECT_DIR$/src/Repository/FindRepo.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Company/CompProfFrame.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Company/ProfRed.java" />
+        <option value="$PROJECT_DIR$/src/Repository/CompanyRepo.java" />
         <option value="$PROJECT_DIR$/src/Repository/UnemployedRepo.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Company.java" />
+        <option value="$PROJECT_DIR$/src/Entities/Vacancy.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Vacancy/VacRed.java" />
         <option value="$PROJECT_DIR$/src/Repository/VacancyRepo.java" />
+        <option value="$PROJECT_DIR$/src/DBLogs.sql" />
       </list>
     </option>
   </component>
@@ -298,9 +308,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -330,10 +338,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utilities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -539,6 +543,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -554,6 +560,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="GUI.Vacancy" />
       <recent name="GUI.Company" />
     </key>
   </component>
@@ -857,12 +864,13 @@
       <workItem from="1450440518633" duration="4035000" />
       <workItem from="1450639404944" duration="1183000" />
       <workItem from="1450655698151" duration="9613000" />
-      <workItem from="1450685816566" duration="2517000" />
+      <workItem from="1450685816566" duration="2558000" />
+      <workItem from="1450695174333" duration="6610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88840000" />
+    <option name="totallyTimeSpent" value="95491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -876,11 +884,12 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13725491" sideWeight="0.8895613" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27450982" sideWeight="0.8895613" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2730711" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.046898637" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -891,7 +900,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.068627454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -947,7 +955,7 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -956,27 +964,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entities/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/AdFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacFindFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1023,13 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2773893">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entities/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2983683">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1083,19 +1063,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacDelDial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Exceptions/FindException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="5" selection-start-line="8" selection-start-column="2" selection-end-line="22" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,32 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacFindFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="44" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entities/Vacancy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding>
-            <element signature="e#2772#2773#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1158,9 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1216,8 +1157,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
           <folding>
-            <element signature="e#3410#3411#0" expanded="true" />
-            <element signature="e#3458#3459#0" expanded="true" />
+            <element signature="e#3410#3411#0" expanded="false" />
+            <element signature="e#3458#3459#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1246,9 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1292,31 +1230,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Unemployed/ProfRed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="50" selection-start-line="135" selection-start-column="50" selection-end-line="135" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Unemployed/SearchFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Company/CompProfFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1325,28 +1245,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="52" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1450687738963" expanded="true" signature="551:577" placeholder="INSERT INTO ..." />
-            <marker date="1450687738963" expanded="true" signature="991:1021" placeholder="SELECT * FRO..Pos..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/CompanyRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="235" column="53" selection-start-line="235" selection-start-column="53" selection-end-line="235" selection-end-column="53" />
-          <folding>
-            <marker date="1450688829205" expanded="true" signature="403:435" placeholder="DELETE FROM ..." />
-            <marker date="1450688829205" expanded="true" signature="917:955" placeholder="INSERT INTO ..." />
-            <marker date="1450688829205" expanded="true" signature="1400:1455" placeholder="SELECT name,..Company..." />
-            <marker date="1450688829205" expanded="true" signature="2262:2298" placeholder="SELECT * FRO..Company..." />
-            <marker date="1450688829205" expanded="true" signature="4368:4414" placeholder="SELECT id,na..Company..." />
-            <marker date="1450688829205" expanded="true" signature="5555:5817" placeholder="SELECT u.id,..Unemployed..." />
-            <marker date="1450688829205" expanded="true" signature="5695:5797" placeholder="SELECT u_id ..Find..." />
-            <marker date="1450688829205" expanded="true" signature="5759:5796" placeholder="SELECT id FR..Vacancy..." />
-            <marker date="1450688829205" expanded="true" signature="6623:6659" placeholder="SELECT * FRO..Company..." />
-            <marker date="1450688829205" expanded="true" signature="7654:7715" placeholder="SELECT id,na..Company..." />
+            <marker date="1450687738963" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1450687738963" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Pos..." />
           </folding>
         </state>
       </provider>
@@ -1356,19 +1256,55 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
           <folding>
-            <marker date="1450688829230" expanded="true" signature="928:1100" placeholder="SELECT f.id,..Find..." />
-            <marker date="1450688829230" expanded="true" signature="2507:2556" placeholder="DELETE FROM ..." />
-            <marker date="1450688829230" expanded="true" signature="3027:3233" placeholder="SELECT f.id,..Find..." />
-            <marker date="1450688829230" expanded="true" signature="3197:3232" placeholder="SELECT p_id ..Vacancy..." />
-            <marker date="1450688829230" expanded="true" signature="3851:3902" placeholder="DELETE FROM ..." />
+            <marker date="1450688829230" expanded="true" signature="-1:-1" placeholder="SELECT f.id,..Find..." />
+            <marker date="1450688829230" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1450688829230" expanded="true" signature="-1:-1" placeholder="SELECT f.id,..Find..." />
+            <marker date="1450688829230" expanded="true" signature="-1:-1" placeholder="SELECT p_id ..Vacancy..." />
+            <marker date="1450688829230" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacFindFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Company/ProfRed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="39" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Unemployed/ProfRed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="149" column="1" selection-start-line="17" selection-start-column="4" selection-end-line="149" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/UnemployedRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="343" column="56" selection-start-line="343" selection-start-column="56" selection-end-line="343" selection-end-column="56" />
+        <state vertical-scroll-proportion="159.72414">
+          <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
           <folding>
             <marker date="1450688829214" expanded="true" signature="2678:2862" placeholder="SELECT u.id,..Unemployed..." />
             <marker date="1450688829214" expanded="true" signature="9466:9624" placeholder="IF (SELECT a..." />
@@ -1391,25 +1327,111 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacDelDial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="168" column="47" selection-start-line="168" selection-start-column="47" selection-end-line="168" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Vacancy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3068#3069#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Vacancy/VacRed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Company/CompProfFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="10" selection-start-line="133" selection-start-column="10" selection-end-line="133" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/CompanyRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="254" column="30" selection-start-line="254" selection-start-column="30" selection-end-line="254" selection-end-column="30" />
+          <folding>
+            <marker date="1450696573473" expanded="true" signature="403:435" placeholder="DELETE FROM ..." />
+            <marker date="1450696573473" expanded="true" signature="875:913" placeholder="INSERT INTO ..." />
+            <marker date="1450696573473" expanded="true" signature="1529:1591" placeholder="UPDATE Compa..." />
+            <marker date="1450696573473" expanded="true" signature="2075:2130" placeholder="SELECT name,..Company..." />
+            <marker date="1450696573473" expanded="true" signature="2937:2973" placeholder="SELECT * FRO..Company..." />
+            <marker date="1450696573473" expanded="true" signature="5043:5089" placeholder="SELECT id,na..Company..." />
+            <marker date="1450696573473" expanded="true" signature="6230:6492" placeholder="SELECT u.id,..Unemployed..." />
+            <marker date="1450696573473" expanded="true" signature="6370:6472" placeholder="SELECT u_id ..Find..." />
+            <marker date="1450696573473" expanded="true" signature="6434:6471" placeholder="SELECT id FR..Vacancy..." />
+            <marker date="1450696573473" expanded="true" signature="7298:7334" placeholder="SELECT * FRO..Company..." />
+            <marker date="1450696573473" expanded="true" signature="8329:8390" placeholder="SELECT id,na..Company..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/VacancyRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.318">
-          <caret line="119" column="53" selection-start-line="119" selection-start-column="53" selection-end-line="119" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="138" column="37" selection-start-line="138" selection-start-column="37" selection-end-line="138" selection-end-column="37" />
           <folding>
-            <marker date="1450688829222" expanded="true" signature="414:464" placeholder="DELETE FROM ..." />
-            <marker date="1450688829222" expanded="true" signature="837:885" placeholder="DELETE FROM ..." />
-            <marker date="1450688829222" expanded="true" signature="1413:1722" placeholder="SELECT v.id,..Vacancy..." />
-            <marker date="1450688829222" expanded="true" signature="1689:1721" placeholder="SELECT p_id ..Find..." />
-            <marker date="1450688829222" expanded="true" signature="4099:4160" placeholder="UPDATE Find ..." />
-            <marker date="1450688829222" expanded="true" signature="4183:4234" placeholder="DELETE FROM ..." />
-            <marker date="1450688829222" expanded="true" signature="4257:4325" placeholder="UPDATE Unemp..." />
-            <marker date="1450688829222" expanded="true" signature="4349:4415" placeholder="UPDATE Vacan..." />
-            <marker date="1450688829222" expanded="true" signature="6454:6621" placeholder="SELECT v.id,..Vacancy..." />
-            <marker date="1450688829222" expanded="true" signature="7318:7577" placeholder="SELECT p.nam..Vacancy..." />
-            <marker date="1450688829222" expanded="true" signature="8462:8736" placeholder="SELECT p.nam..Vacancy..." />
-            <marker date="1450688829222" expanded="true" signature="9557:9608" placeholder="SELECT id FR..Vacancy..." />
-            <marker date="1450688829222" expanded="true" signature="10167:10220" placeholder="SELECT id FR..Vacancy..." />
+            <marker date="1450701379038" expanded="true" signature="439:489" placeholder="DELETE FROM ..." />
+            <marker date="1450701379038" expanded="true" signature="862:910" placeholder="DELETE FROM ..." />
+            <marker date="1450701379038" expanded="true" signature="1341:1462" placeholder="SELECT FROM ..Vacancy..." />
+            <marker date="1450701379038" expanded="true" signature="1341:1519" placeholder="SELECT p.nam..Vacancy..." />
+            <marker date="1450701379038" expanded="true" signature="1388:1462" placeholder="DELETE FROM ..." />
+            <marker date="1450701379038" expanded="true" signature="2316:2625" placeholder="SELECT v.id,..Vacancy..." />
+            <marker date="1450701379038" expanded="true" signature="2592:2624" placeholder="SELECT p_id ..Find..." />
+            <marker date="1450701379038" expanded="true" signature="5002:5063" placeholder="UPDATE Find ..." />
+            <marker date="1450701379038" expanded="true" signature="5086:5137" placeholder="DELETE FROM ..." />
+            <marker date="1450701379038" expanded="true" signature="5160:5228" placeholder="UPDATE Unemp..." />
+            <marker date="1450701379038" expanded="true" signature="5252:5318" placeholder="UPDATE Vacan..." />
+            <marker date="1450701379038" expanded="true" signature="7355:7522" placeholder="SELECT v.id,..Vacancy..." />
+            <marker date="1450701379038" expanded="true" signature="8219:8478" placeholder="SELECT p.nam..Vacancy..." />
+            <marker date="1450701379038" expanded="true" signature="9363:9637" placeholder="SELECT p.nam..Vacancy..." />
+            <marker date="1450701379038" expanded="true" signature="10458:10509" placeholder="SELECT id FR..Vacancy..." />
+            <marker date="1450701379038" expanded="true" signature="11068:11121" placeholder="SELECT id FR..Vacancy..." />
+            <marker date="1450701379038" expanded="true" signature="12021:12049" placeholder="DECLARE @p_i..." />
+            <marker date="1450701379038" expanded="true" signature="12021:12310" placeholder="UPDATE Vacan..." />
+            <marker date="1450701379038" expanded="true" signature="12073:12124" placeholder="SET @p_id = ..." />
+            <marker date="1450701379038" expanded="true" signature="12073:12310" placeholder="SET @p_id = ..." />
+            <marker date="1450701379038" expanded="true" signature="12086:12110" placeholder="SELECT id FR..Pos..." />
+            <marker date="1450701379038" expanded="true" signature="12086:12123" placeholder="SELECT id FR..Pos..." />
+            <marker date="1450701379038" expanded="true" signature="12147:12196" placeholder="SET @home = ..." />
+            <marker date="1450701379038" expanded="true" signature="12160:12195" placeholder="SELECT id FR..HomeV..." />
+            <marker date="1450701379038" expanded="true" signature="12219:12309" placeholder="UPDATE Vacan..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DBLogs.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50240386">
+          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>

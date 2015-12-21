@@ -34,6 +34,15 @@ public class Company {
         this.archive = archive;
     }
 
+    public Company(int id, String nam, String addr, String ph) {
+        this.id = id;
+        this.name = nam;
+        this.adres = addr;
+        this.phone = ph;
+    }
+
+
+
     public String getName() {
         return name;
     }

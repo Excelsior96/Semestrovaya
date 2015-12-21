@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/src/GUI/Company/DistCompFrame.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/GUI/Company/DistDialog.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/GUI/Company/ProfDelDialog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Company/ProfRed.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/GUI/Company/SearchComp.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/GUI/Company/SearchCompList.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/GUI/Find/FindDelDial.java" charset="UTF-8" />
@@ -22,6 +23,7 @@
     <file url="file://$PROJECT_DIR$/src/GUI/Vacancy/AdFrame.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/GUI/Vacancy/VacCompFrame.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/GUI/Vacancy/VacDelDial.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/GUI/Vacancy/VacRed.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Repository/CompanyRepo.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Repository/PosRepo.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Utilities/GUIService.java" charset="UTF-8" />

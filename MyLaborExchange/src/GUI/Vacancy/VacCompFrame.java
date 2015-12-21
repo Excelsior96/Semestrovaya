@@ -115,7 +115,7 @@ public class VacCompFrame {
                 }
             }
 
-            };
+        };
 
         JButton bu = new JButton("Сгенерировать объявление");
         ActionListener li = new ActionListener() {
@@ -125,8 +125,8 @@ public class VacCompFrame {
                 try { //Validation
                     VacancyRepo.intValidator(id);
                     VacancyRepo.checkID(Integer.parseInt(id));
-                   ArrayList list = VacancyRepo.getAdById(Integer.parseInt(id), comp.getId());
-                     new AdFrame(list);
+                    ArrayList list = VacancyRepo.getAdById(Integer.parseInt(id), comp.getId());
+                    new AdFrame(list);
 
                 } catch (VacancyException e1) {
                     JOptionPane.showMessageDialog(panel, e1.getMessage());
@@ -134,41 +134,59 @@ public class VacCompFrame {
                 }
 
 
-            }};
+            }
+        };
 
 
+        JButton butt = new JButton("Сгенерировать все объявления");
+        ActionListener liste = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
-            JButton butt = new JButton("Сгенерировать все объявления");
-            ActionListener liste = new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-
-                    try {
-                        VacancyRepo.checkAllID(comp.getId());
-                        ArrayList<Vacancy> list = VacancyRepo.getAllAd(comp.getId());
-                        new AdFrame(list);
-                    } catch (VacancyException e1) {
-                        JOptionPane.showMessageDialog(panel, e1.getMessage());
-                        e1.printStackTrace();
-                    }
-
+                try {
+                    VacancyRepo.checkAllID(comp.getId());
+                    ArrayList<Vacancy> list = VacancyRepo.getAllAd(comp.getId());
+                    new AdFrame(list);
+                } catch (VacancyException e1) {
+                    JOptionPane.showMessageDialog(panel, e1.getMessage());
+                    e1.printStackTrace();
                 }
-            };
 
-            butt.addActionListener(liste);
-            button.addActionListener(listener);
-            but.addActionListener(lis);
-            b.addActionListener(l);
-            bu.addActionListener(li);
-            panel.add(button,GUIService.setTextFieldConstraints());
-            panel.add(but,GUIService.setTextFieldConstraints());
-            panel.add(b,GUIService.setTextFieldConstraints());
-            panel.add(bu,GUIService.setTextFieldConstraints());
-            panel.add(butt,GUIService.setTextFieldConstraints());
+            }
+        };
 
-            frame.add(panel,BorderLayout.CENTER);
-            frame.setVisible(true);
-        }
+
+        JButton bb = new JButton("Редактировать");
+        ActionListener ll = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String id = field.getText();
+                try { //Validation
+                    VacancyRepo.intValidator(id);
+                    VacancyRepo.checkID(Integer.parseInt(id));
+                    Vacancy vac = VacancyRepo.getById(id);
+                    new VacRed(comp, cid, vac);
+                } catch (VacancyException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        };
+        bb.addActionListener(ll);
+        butt.addActionListener(liste);
+        button.addActionListener(listener);
+        but.addActionListener(lis);
+        b.addActionListener(l);
+        bu.addActionListener(li);
+        panel.add(button, GUIService.setTextFieldConstraints());
+        panel.add(but, GUIService.setTextFieldConstraints());
+        panel.add(b, GUIService.setTextFieldConstraints());
+        panel.add(bu, GUIService.setTextFieldConstraints());
+        panel.add(butt, GUIService.setTextFieldConstraints());
+        panel.add(bb, GUIService.setTextFieldConstraints());
+
+        frame.add(panel, BorderLayout.CENTER);
+        frame.setVisible(true);
+    }
 
 
     public static JFrame getFrame() {
