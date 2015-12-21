@@ -73,14 +73,15 @@ public class UnemplProfFrame {
         JLabel posL = new JLabel("Введите желаемую должность: ");
         panel.add(posL, GUIService.setLabelConstraints());
 
-        final JTextField posF = new JTextField();
-        panel.add(posF, GUIService.setTextFieldConstraints());
+        final JComboBox posC = new JComboBox(GUIService.getPos());
+        panel.add(posC, GUIService.setTextFieldConstraints());
+
         final JButton but = new JButton("Разместить заявку");
 
         ActionListener lis = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String pos = posF.getText();
+                String pos = (String) posC.getSelectedItem();
                 try {
                     FindRepo.addFind(new Find(unemp.getId(), pos));
                     JOptionPane.showMessageDialog(panel, "Успешно!");
@@ -91,7 +92,6 @@ public class UnemplProfFrame {
                     e1.printStackTrace();
                 }
 
-                posF.setText("");
             }
         };
 

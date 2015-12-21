@@ -2,6 +2,7 @@ package GUI;
 
 
 import GUI.Company.CompaniesPanel;
+import GUI.Pos.PosPanel;
 import GUI.Unemployed.UnemplPanel;
 
 import javax.swing.*;
@@ -23,6 +24,7 @@ public class GUI extends JFrame {
         tabbedPane.setFont(font);
         tabbedPane.add("Безработные", UnemplPanel.getPanel());
         tabbedPane.add("Фирмы", CompaniesPanel.getPanel());
+        tabbedPane.add("Должности", PosPanel.getPanel());
         panel.add(tabbedPane);
         this.add(panel);
 

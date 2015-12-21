@@ -128,6 +128,27 @@ public class GUIService {
 
     }
 
+
+    public static String[] getPos() {
+        Connection con = DBService.connect();
+        ArrayList<String> list = new ArrayList();
+        try {
+            PreparedStatement st = con.prepareStatement("SELECT name FROM Pos");
+            ResultSet res = st.executeQuery();
+            while (res.next()) {
+                list.add(res.getString("name"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        String[] items = new String[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            items[i] = list.get(i);
+        }
+        return items;
+    }
+
     public static GridBagConstraints setInsectTextFieldConstraints() {
         GridBagConstraints c = new GridBagConstraints();
         c.insets = new Insets(2, 2, 30, 2);

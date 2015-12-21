@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 public class FindRepo {
 
     public static void addFind(Find f) throws FindException {
-        check(f);
+
         String insert = "{CALL addFind(?,?)}";
         Connection con = DBService.connect();
         try {
@@ -67,15 +67,6 @@ public class FindRepo {
         return data;
     }
 
-    private static void check(Find find) throws FindException {
-
-
-        if (find.getPos() == null || "".equals(find.getPos())) {
-            throw new FindException("Поле не заполнено");
-        }
-
-
-    }
 
     public static void intValidator(String age) throws FindException {
         final String PATTERN = "^[0-9][0-9]*$";

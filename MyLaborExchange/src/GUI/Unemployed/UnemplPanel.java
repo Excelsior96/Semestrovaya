@@ -183,6 +183,15 @@ public class UnemplPanel {
         };
         but.addActionListener(list);;
         panel.add(but, GUIService.setTextFieldConstraints());
+        JButton bbb = new JButton("Поиск");
+        ActionListener lll = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new SearchFrame();
+            }
+        };
+        bbb.addActionListener(lll);
+        panel.add(bbb, GUIService.setTextFieldConstraints());
 
 
         return panel;

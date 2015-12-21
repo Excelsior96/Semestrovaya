@@ -63,10 +63,10 @@ Company comp = CompanyRepo.getById(cid);
 
         // KMP!!! I don't want to continue...
 
-        JLabel posL = new JLabel("Введите предлагаемую должность: ");
+        JLabel posL = new JLabel("Выберите предлагаемую должность: ");
         panel.add(posL, GUIService.setLabelConstraints());
-        final JTextField posF = new JTextField();
-        panel.add(posF, GUIService.setTextFieldConstraints());
+        final JComboBox posC = new JComboBox(GUIService.getPos());
+        panel.add(posC, GUIService.setTextFieldConstraints());
 
         JLabel payL = new JLabel("Введите зарплату: ");
         panel.add(payL, GUIService.setLabelConstraints());
@@ -93,7 +93,7 @@ Company comp = CompanyRepo.getById(cid);
         ActionListener lis = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String pos = posF.getText();
+                String pos = (String) posC.getSelectedItem();
                 String pay = payF.getText();
                 String cond = condF.getText();
                 String req = reqF.getText();
@@ -104,7 +104,6 @@ Company comp = CompanyRepo.getById(cid);
 
                     VacancyRepo.addVac(new Vacancy(comp.getId(), pos, Integer.parseInt(pay), cond, req, home));
                     JOptionPane.showMessageDialog(panel, "Успешно!");
-                    posF.setText("");
                     payF.setText("");
                     condF.setText("");
                     reqF.setText("");

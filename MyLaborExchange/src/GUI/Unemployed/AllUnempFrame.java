@@ -45,7 +45,7 @@ public class AllUnempFrame extends JFrame {
         final JTextField field = new JTextField();
         panel.add(field, GUIService.setTextFieldConstraints());
 
-        JButton  button = new JButton("Показать полный профиль");
+        JButton button = new JButton("Показать полный профиль");
         ActionListener listener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

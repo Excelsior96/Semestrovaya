@@ -215,17 +215,20 @@ public class UnemployedRepo {
     }
 
 
-    public static ArrayList<Unemployed> getByParam(String param, String value) {
+    public static ArrayList<Unemployed> search(String value) {
 
         ArrayList<Unemployed> list = new ArrayList<Unemployed>();
         Connection con = DBService.connect();
-        String insert = "{CALL getUnempByParam(?,?)}";
+        String insert = "{CALL getUnempByParam(?)}";
         try {
             CallableStatement st = con.prepareCall(insert);
-            st.setString(1, param);
-            st.setString(2, value);
+            st.setString(1, value);
             ResultSet set = st.executeQuery();
             while (set.next()) {
+                String archive = "Да";
+                if (set.getInt(9)==0){
+                    archive = "Нет";
+                }
                 list.add(new Unemployed(
                         set.getInt(1),
                         set.getString(2),
@@ -234,7 +237,7 @@ public class UnemployedRepo {
                         set.getString(5),
                         set.getString(6),
                         set.getString(7),
-                        set.getString(8)));
+                        set.getString(8),archive));
 
 
             }
@@ -296,6 +299,9 @@ public class UnemployedRepo {
             e.printStackTrace();
         }
     }
+
+
+
 
 
     private static void check(Unemployed unemp) throws UnemployedException {
