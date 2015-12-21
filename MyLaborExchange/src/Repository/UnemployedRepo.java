@@ -16,6 +16,14 @@ public class UnemployedRepo {
     public static void addFull(Unemployed unemp) throws UnemployedException {
 
         check(unemp);
+        notIntValidator(unemp.getName());
+        notIntValidator(unemp.getAddress());
+        intValidator(unemp.getPhone());
+        notIntValidator(unemp.getAddress());
+        notIntValidator(unemp.getProf());
+        notIntValidator(unemp.getLastWork());
+        notIntValidator(unemp.getLastPos());
+        notIntValidator(unemp.getDismiss());
 
         String insert = "{CALL addFull(?,?,?,?,?,?,?,?,?,?,?,?)}";
         Connection con = DBService.connect();
@@ -215,7 +223,9 @@ public class UnemployedRepo {
     }
 
 
-    public static ArrayList<Unemployed> search(String value) {
+    public static ArrayList<Unemployed> search(String value){
+
+
 
         ArrayList<Unemployed> list = new ArrayList<Unemployed>();
         Connection con = DBService.connect();
@@ -327,11 +337,11 @@ public class UnemployedRepo {
     }
 
     public static void intValidator(String age) throws UnemployedException {
-        final String PATTERN = "^[0-9][0-9]*$";
+        final String PATTERN = "^[^-][0-9][0-9]*$";
         Pattern pattern = Pattern.compile(PATTERN);
         Matcher matcher = pattern.matcher(age);
         if (!matcher.matches()) {
-            throw new UnemployedException("Поле заполнено некорректно или не заполнено. Используйте существующие числовые значения");
+            throw new UnemployedException("Одно из полей заполнено некорректно или не заполнено. Используйте существующие числовые значения");
         }
 
     }
@@ -392,6 +402,15 @@ public class UnemployedRepo {
     public static void update(Unemployed unemp) throws UnemployedException {
         checkUp(unemp);
 
+        notIntValidator(unemp.getName());
+        notIntValidator(unemp.getAddress());
+        intValidator(unemp.getPhone());
+        notIntValidator(unemp.getAddress());
+        notIntValidator(unemp.getProf());
+        notIntValidator(unemp.getLastWork());
+        notIntValidator(unemp.getLastPos());
+        notIntValidator(unemp.getDismiss());
+
         String insert = "{CALL updateUnemp(?,?,?,?,?,?,?,?,?,?,?,?)}";
         Connection con = DBService.connect();
 
@@ -434,6 +453,17 @@ public class UnemployedRepo {
 
         if (unemp.getProf() == null || "".equals(unemp.getProf())) {
             throw new UnemployedException("Поле Профессия не заполнено");
+        }
+
+
+    }
+
+    public static void notIntValidator(String str) throws UnemployedException {
+        final String PATTERN = "[а-я]*[А-Я]*[0-9]*-*[0-9][0-9]*";
+        Pattern pattern = Pattern.compile(PATTERN);
+        Matcher matcher = pattern.matcher(str);
+        if (matcher.matches()) {
+            throw new UnemployedException("Числовые значения недопустимы");
         }
 
 

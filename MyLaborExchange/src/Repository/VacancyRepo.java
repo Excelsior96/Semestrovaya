@@ -1,6 +1,7 @@
 package Repository;
 
 import Entities.Vacancy;
+import Exceptions.UnemployedException;
 import Exceptions.VacancyException;
 import Utilities.DBService;
 
@@ -112,11 +113,11 @@ public class VacancyRepo {
     }
 
     public static void intValidator(String age) throws VacancyException {
-        final String PATTERN = "^[0-9][0-9]*$";
+        final String PATTERN = "^[^-][0-9][0-9]*$";
         Pattern pattern = Pattern.compile(PATTERN);
         Matcher matcher = pattern.matcher(age);
         if (!matcher.matches()) {
-            throw new VacancyException("Поле заполнено некорректно или не заполнено. Используйте существующие числовые значения");
+            throw new VacancyException("Одно из полей заполнено некорректно или не заполнено. Используйте существующие числовые значения");
         }
 
     }
@@ -149,6 +150,9 @@ public class VacancyRepo {
     public static void addVac(Vacancy vac) throws VacancyException {
 
         check(vac);
+        notIntValidator(vac.getCond());
+        notIntValidator(vac.getReq());
+
         String insert = "{CALL addVac(?,?,?,?,?,?)}";
         Connection con = DBService.connect();
 
@@ -167,6 +171,8 @@ public class VacancyRepo {
         }
 
     }
+
+
 
 
     private static void check(Vacancy vac) throws VacancyException {
@@ -301,5 +307,14 @@ public class VacancyRepo {
             e.printStackTrace();
         }
     }
+    public static void notIntValidator(String str) throws VacancyException {
+        final String PATTERN = "[а-я]*[А-Я]*[0-9]*-*[0-9][0-9]*";
+        Pattern pattern = Pattern.compile(PATTERN);
+        Matcher matcher = pattern.matcher(str);
+        if (matcher.matches()) {
+            throw new VacancyException("Числовые значения недопустимы");
+        }
 
+
+    }
 }

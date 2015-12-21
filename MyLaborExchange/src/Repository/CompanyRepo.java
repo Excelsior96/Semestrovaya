@@ -31,6 +31,9 @@ public class CompanyRepo {
     public static void addFull(Company comp) throws CompanyException {
 
         check(comp);
+        notIntValidator(comp.getName());
+        notIntValidator(comp.getAdres());
+        notIntValidator(comp.getPhone());
 
         String insert = "INSERT INTO Company VALUES (?,?,?,0,0)";
         Connection con = DBService.connect();
@@ -49,7 +52,7 @@ public class CompanyRepo {
     }
 
 
-    public static Company getById(int id)  {
+    public static Company getById(int id) {
 
         String insert = "SELECT name,adres, phone, col FROM Company WHERE id = ?";
         Connection con = DBService.connect();
@@ -86,7 +89,7 @@ public class CompanyRepo {
             ResultSet set = st.executeQuery();
             while (set.next()) {
                 String archive = "Нет";
-                if (set.getByte(6)==1){
+                if (set.getByte(6) == 1) {
                     archive = "Да";
                 }
                 list.add(new Company(
@@ -105,14 +108,15 @@ public class CompanyRepo {
         }
         return list;
     }
+
     public static String[][] getDistTable(ArrayList<Company> list) {
 
 
         String[][] data = new String[list.size()][6];
         int i = 0;
-        for (Company comp: list) {
+        for (Company comp : list) {
             data[i][0] = String.valueOf(comp.getId());
-            data[i][1] =comp.getName();
+            data[i][1] = comp.getName();
             data[i][2] = comp.getAdres();
             data[i][3] = comp.getPhone();
             data[i][4] = String.valueOf(comp.getCol());
@@ -179,7 +183,7 @@ public class CompanyRepo {
         return data;
     }
 
-    public static ArrayList<Unemployed> hasUnemp(int id){
+    public static ArrayList<Unemployed> hasUnemp(int id) {
         ArrayList<Unemployed> list = new ArrayList<Unemployed>();
         String insert = "SELECT u.id, u.fio, u.age, u.sex, u.adres, u.phone, u.prof, st.stud \n" +
                 " FROM Unemployed AS u, Stud AS st WHERE u.id IN (SELECT u_id FROM Find WHERE archive IN\n" +
@@ -189,7 +193,7 @@ public class CompanyRepo {
             st.setInt(1, id);
             st.execute();
             ResultSet set = st.executeQuery();
-            while (set.next()){
+            while (set.next()) {
                 list.add(new Unemployed(
                         set.getInt(1),
                         set.getString(2),
@@ -225,11 +229,11 @@ public class CompanyRepo {
     }
 
     public static void intValidator(String age) throws CompanyException {
-        final String PATTERN = "^[0-9][0-9]*$";
+        final String PATTERN = "^[^-][0-9][0-9]*$";
         Pattern pattern = Pattern.compile(PATTERN);
         Matcher matcher = pattern.matcher(age);
         if (!matcher.matches()) {
-            throw new CompanyException("Поле заполнено некорректно или не заполнено. Используйте существующие числовые значения");
+            throw new CompanyException("Одно из полей заполнено некорректно или не заполнено. Используйте существующие числовые значения");
         }
 
     }
@@ -260,5 +264,15 @@ public class CompanyRepo {
             e.printStackTrace();
         }
         return list;
+    }
+
+    public static void notIntValidator(String str) throws CompanyException {
+        final String PATTERN = "[А-Я]*[а-я]*[0-9]*-*[0-9][0-9]*";
+        Pattern pattern = Pattern.compile(PATTERN);
+        Matcher matcher = pattern.matcher(str);
+        if (matcher.matches()) {
+            throw new CompanyException("Числовые значения недопустимы");
+        }
+
     }
 }

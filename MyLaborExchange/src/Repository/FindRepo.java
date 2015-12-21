@@ -16,7 +16,6 @@ import java.util.regex.Pattern;
 public class FindRepo {
 
     public static void addFind(Find f) throws FindException {
-
         String insert = "{CALL addFind(?,?)}";
         Connection con = DBService.connect();
         try {
@@ -69,11 +68,11 @@ public class FindRepo {
 
 
     public static void intValidator(String age) throws FindException {
-        final String PATTERN = "^[0-9][0-9]*$";
+        final String PATTERN = "^[^-][0-9][0-9]*$";
         Pattern pattern = Pattern.compile(PATTERN);
         Matcher matcher = pattern.matcher(age);
         if (!matcher.matches()) {
-            throw new FindException("Поле заполнено некорректно или не заполнено. Используйте существующие числовые значения");
+            throw new FindException("Одно из полей заполнено некорректно или не заполнено. Используйте существующие числовые значения");
         }
 
     }
@@ -127,4 +126,6 @@ public class FindRepo {
         }
 
     }
+
+
 }

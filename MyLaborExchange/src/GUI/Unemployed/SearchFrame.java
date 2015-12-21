@@ -1,6 +1,7 @@
 package GUI.Unemployed;
 
 import Entities.Unemployed;
+import Exceptions.UnemployedException;
 import Repository.UnemployedRepo;
 import Utilities.GUIService;
 
@@ -35,13 +36,16 @@ public class SearchFrame {
                 String name = field.getText();
                 if (name != "") {
 
-                    ArrayList<Unemployed> list = UnemployedRepo.search(name);
+                    ArrayList<Unemployed> list = null;
+
+                        list = UnemployedRepo.search(name);
+
                     if (list.size() != 0) {
                         frame.dispose();
                         new SearchUnemp(list);
 
                     } else {
-                        JOptionPane.showMessageDialog(panel, "Ничего не найдено");
+                        JOptionPane.showMessageDialog(panel, "Ничего не найдено или значения некорректны");
                     }
 
 

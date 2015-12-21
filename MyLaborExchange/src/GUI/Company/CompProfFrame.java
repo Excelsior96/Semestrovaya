@@ -110,7 +110,7 @@ Company comp = CompanyRepo.getById(cid);
                     AllCompFrame.getFrame().dispose();
                     new AllCompFrame();
                     CompProfFrame.getFrame().dispose();
-                    ;
+
                     new CompProfFrame(cid);
                 } catch (VacancyException e1) {
 
