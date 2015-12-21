@@ -226,7 +226,7 @@ public class UnemployedRepo {
             ResultSet set = st.executeQuery();
             while (set.next()) {
                 String archive = "Да";
-                if (set.getInt(9)==0){
+                if (set.getInt(9) == 0) {
                     archive = "Нет";
                 }
                 list.add(new Unemployed(
@@ -237,7 +237,7 @@ public class UnemployedRepo {
                         set.getString(5),
                         set.getString(6),
                         set.getString(7),
-                        set.getString(8),archive));
+                        set.getString(8), archive));
 
 
             }
@@ -299,9 +299,6 @@ public class UnemployedRepo {
             e.printStackTrace();
         }
     }
-
-
-
 
 
     private static void check(Unemployed unemp) throws UnemployedException {
@@ -390,5 +387,55 @@ public class UnemployedRepo {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void update(Unemployed unemp) throws UnemployedException {
+        checkUp(unemp);
+
+        String insert = "{CALL updateUnemp(?,?,?,?,?,?,?,?,?,?,?,?)}";
+        Connection con = DBService.connect();
+
+        try {
+            CallableStatement st = con.prepareCall(insert);
+            st.setInt(1, unemp.getId());
+            st.setString(2, unemp.getName());
+            st.setString(3, unemp.getSp());
+            st.setString(4, unemp.getProf());
+            st.setString(5, unemp.getStud());
+            st.setString(6, unemp.getLastWork());
+            st.setString(7, unemp.getLastPos());
+            st.setString(8, unemp.getDismiss());
+            st.setString(9, unemp.getHome());
+            st.setString(10, unemp.getAddress());
+            st.setString(11, unemp.getPhone());
+            st.setString(12, unemp.getSex());
+            st.execute();
+        } catch (SQLException e) {
+
+            e.printStackTrace();
+        }
+    }
+
+    private static void checkUp(Unemployed unemp) throws UnemployedException {
+
+        if (unemp == null) {
+            throw new NullPointerException("Не бывает безработных без данных");
+        }
+        if (unemp.getName() == null || "".equals(unemp.getName())) {
+            throw new UnemployedException("Поле ФИО не заполнено");
+        }
+
+        if (unemp.getAddress() == null || "".equals(unemp.getAddress())) {
+            throw new UnemployedException("Поле Адрес не заполнено");
+        }
+        if (unemp.getPhone() == null || "".equals(unemp.getPhone())) {
+            throw new UnemployedException("Поле Телефон не заполнено");
+        }
+
+        if (unemp.getProf() == null || "".equals(unemp.getProf())) {
+            throw new UnemployedException("Поле Профессия не заполнено");
+        }
+
+
     }
 }

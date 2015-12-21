@@ -106,10 +106,20 @@ public class UnemplProfFrame {
         };
         b.addActionListener(l);
 
+JButton bb = new JButton("Редактировать профиль");
+        ActionListener ll = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+          new ProfRed(unemp);
+            }
+        };
+        bb.addActionListener(ll);
+
 
         panel.add(but, GUIService.setTextFieldConstraints());
         panel.add(b, GUIService.setTextFieldConstraints());
         panel.add(button, GUIService.setTextFieldConstraints());
+        panel.add(bb, GUIService.setTextFieldConstraints());
 
 
         frame.add(panel);

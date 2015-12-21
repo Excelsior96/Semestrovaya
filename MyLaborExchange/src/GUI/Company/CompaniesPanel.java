@@ -16,7 +16,7 @@ import java.awt.event.ActionListener;
 public class CompaniesPanel {
     final static Font TOPFONT = new Font("Arial", Font.BOLD, 22);
 
-    public static JPanel getPanel(){
+    public static JPanel getPanel() {
 
         JPanel panel = new JPanel();
         panel.setLayout(new GridBagLayout());
@@ -53,7 +53,7 @@ public class CompaniesPanel {
 
                 try {  //uniqueness
 
-                    Company comp = new Company(name,address, phone);
+                    Company comp = new Company(name, address, phone);
                     if (CompanyRepo.unempDist(comp.getName())) {
                         CompanyRepo.addFull(comp);
                         JOptionPane.showMessageDialog(panel, message);
@@ -62,7 +62,7 @@ public class CompaniesPanel {
                         phoneF.setText("");
                     } else {
                         //if there is a match in DB, it prompts you for confirmation of adding
-                     new DistDialog(comp);
+                        new DistDialog(comp);
                     }
 
                 } catch (CompanyException ex) {
@@ -84,10 +84,19 @@ public class CompaniesPanel {
 
             }
         };
-        button.addActionListener(allListener);;
+
+        button.addActionListener(allListener);
         panel.add(button, GUIService.setTextFieldConstraints());
 
-
+        JButton but = new JButton("Поиск");
+        ActionListener list = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new SearchComp();
+            }
+        };
+        but.addActionListener(list);
+        panel.add(but, GUIService.setTextFieldConstraints());
         return panel;
     }
 }

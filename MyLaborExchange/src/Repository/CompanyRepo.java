@@ -235,4 +235,30 @@ public class CompanyRepo {
     }
 
 
+    public static ArrayList<Company> search(String name) {
+
+
+        ArrayList<Company> list = new ArrayList<Company>();
+        Connection con = DBService.connect();
+        String insert = "SELECT id,name, adres, phone, col FROM Company WHERE name = ?";
+        try {
+            PreparedStatement st = con.prepareStatement(insert);
+            st.setString(1, name);
+            st.execute();
+            ResultSet set = st.executeQuery();
+            while (set.next()) {
+                list.add(new Company(
+                        set.getInt(1),
+                        set.getString(2),
+                        set.getString(3),
+                        set.getString(4),
+                        set.getInt(5)));
+
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
 }

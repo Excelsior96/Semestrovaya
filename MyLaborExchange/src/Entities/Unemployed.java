@@ -5,7 +5,7 @@ package Entities;
  */
 public class Unemployed {
     private String pos;
-    private  String company;
+    private String company;
     private int id;
     private String name;
     private int age;
@@ -23,7 +23,7 @@ public class Unemployed {
     private String archiveN;
 
 
-    public Unemployed(String name, int age,String sex, String sp, String home, String address, String phone, String stud, String prof, String lastWork, String lastPos, String dismiss) {
+    public Unemployed(String name, int age, String sex, String sp, String home, String address, String phone, String stud, String prof, String lastWork, String lastPos, String dismiss) {
         this.name = name;
         this.age = age;
         this.sex = sex;
@@ -37,7 +37,8 @@ public class Unemployed {
         this.lastPos = lastPos;
         this.dismiss = dismiss;
     }
-    public Unemployed(int id,String name, int age, String sp,String prof, String stud, String lastWork, String lastPos, String dismiss, String home, String address, String phone, int archive,String sex) {
+
+    public Unemployed(int id, String name, int age, String sp, String prof, String stud, String lastWork, String lastPos, String dismiss, String home, String address, String phone, int archive, String sex) {
         this.name = name;
         this.age = age;
         this.sex = sex;
@@ -53,7 +54,8 @@ public class Unemployed {
         this.id = id;
         this.archive = archive;
     }
-    public Unemployed(int id,String name, int age, String sp,String prof, String stud, String lastWork, String lastPos, String dismiss, String home, String address, String phone, int archive,String sex, String company, String pos) {
+
+    public Unemployed(int id, String name, int age, String sp, String prof, String stud, String lastWork, String lastPos, String dismiss, String home, String address, String phone, int archive, String sex, String company, String pos) {
         this.name = name;
         this.age = age;
         this.sex = sex;
@@ -71,7 +73,8 @@ public class Unemployed {
         this.company = company;
         this.pos = pos;
     }
-    public Unemployed(int id,String name, int age,String sex, String address, String phone, String stud, String prof) {
+
+    public Unemployed(int id, String name, int age, String sex, String address, String phone, String stud, String prof) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -82,7 +85,8 @@ public class Unemployed {
         this.prof = prof;
 
     }
-    public Unemployed(int id,String name, int age,String sex, String address, String phone, String stud, String prof, String archiveN) {
+
+    public Unemployed(int id, String name, int age, String sex, String address, String phone, String stud, String prof, String archiveN) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -92,6 +96,22 @@ public class Unemployed {
         this.stud = stud;
         this.prof = prof;
         this.archiveN = archiveN;
+
+    }
+
+    public Unemployed(int id, String name, String sex, String sp, String home, String address, String phone, String stud, String prof, String lastWork, String lastPos, String dismiss) {
+        this.id = id;
+        this.name = name;
+        this.sex = sex;
+        this.sp = sp;
+        this.home = home;
+        this.address = address;
+        this.phone = phone;
+        this.stud = stud;
+        this.prof = prof;
+        this.lastWork = lastWork;
+        this.lastPos = lastPos;
+        this.dismiss = dismiss;
 
     }
 
